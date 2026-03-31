@@ -4,29 +4,22 @@
 
 ## Training Philosophy
 
-```
-┌──────────────────────────────────────────────┐
-│           THE PERFORMANCE PYRAMID            │
-├──────────────────────────────────────────────┤
-│                                              │
-│                  /\                           │
-│                 /  \   Peak Performance       │
-│                /    \  (sport-specific)       │
-│               /──────\                       │
-│              / Strength\                     │
-│             /  & Power  \                    │
-│            /──────────────\                  │
-│           /   Mobility &   \                 │
-│          /    Flexibility    \                │
-│         /────────────────────\               │
-│        /    Cardiovascular    \              │
-│       /       Base Fitness    \              │
-│      /────────────────────────-\             │
-│     /     Sleep + Nutrition     \            │
-│    /     (THE REAL FOUNDATION)   \           │
-│   /──────────────────────────────-\          │
-│                                              │
-└──────────────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph pyramid["THE PERFORMANCE PYRAMID"]
+        direction TB
+        A["Peak Performance<br/>(sport-specific)"]
+        B["Strength & Power"]
+        C["Mobility & Flexibility"]
+        D["Cardiovascular Base Fitness"]
+        E["Sleep + Nutrition<br/>(THE REAL FOUNDATION)"]
+    end
+    A --> B --> C --> D --> E
+    style A fill:#e94560,stroke:#e94560,color:#fff
+    style B fill:#c0392b,stroke:#c0392b,color:#fff
+    style C fill:#e67e22,stroke:#e67e22,color:#fff
+    style D fill:#2980b9,stroke:#2980b9,color:#fff
+    style E fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
 ## Weekly Structure
@@ -41,25 +34,32 @@
 | Sat | Long Zone 2 or Active Recovery | 45-60 min | Low |
 | Sun | Rest / Mobility | 20-30 min | Very Low |
 
+```mermaid
+pie title Weekly Training Split
+    "Strength" : 3
+    "Zone 2 Cardio" : 2.5
+    "Rest / Mobility" : 1.5
+```
+
 ## Strength Training Essentials
 
 Focus on compound movements. These give you 80% of the results:
 
-```
-┌──────────────────────────────────────┐
-│        THE BIG 6 MOVEMENTS          │
-├──────────────────────────────────────┤
-│                                      │
-│  1. Squat      (legs, core)          │
-│  2. Deadlift   (posterior chain)     │
-│  3. Bench      (chest, shoulders)    │
-│  4. Row        (back, biceps)        │
-│  5. Overhead   (shoulders, core)     │
-│     Press                            │
-│  6. Pull-up    (back, arms, grip)    │
-│                                      │
-│  Master these before anything else.  │
-└──────────────────────────────────────┘
+```mermaid
+mindmap
+  root((THE BIG 6))
+    Squat
+      Legs + Core
+    Deadlift
+      Posterior Chain
+    Bench Press
+      Chest + Shoulders
+    Row
+      Back + Biceps
+    Overhead Press
+      Shoulders + Core
+    Pull-up
+      Back + Arms + Grip
 ```
 
 **Progressive overload** is the only law: gradually increase weight, reps, or volume over time.
@@ -75,40 +75,48 @@ Zone 2 = conversational pace. You can talk but not sing.
 
 **Target**: 150-180 min/week of Zone 2 (walking, cycling, easy jogging)
 
+```mermaid
+xychart-beta
+    title "Heart Rate Zones (% of Max HR)"
+    x-axis ["Zone 1", "Zone 2", "Zone 3", "Zone 4", "Zone 5"]
+    y-axis "% Max HR" 40 --> 105
+    bar [55, 65, 75, 85, 95]
 ```
-Heart Rate Zones:
-Zone 1: 50-60% max HR  │ Very easy, recovery
-Zone 2: 60-70% max HR  │ ★ THE MONEY ZONE — do most cardio here
-Zone 3: 70-80% max HR  │ Moderate, "grey zone" — least efficient
-Zone 4: 80-90% max HR  │ Hard, threshold work
-Zone 5: 90-100% max HR │ Max effort, sprint intervals
-```
+
+| Zone | % Max HR | Description |
+|------|----------|-------------|
+| Zone 1 | 50-60% | Very easy, recovery |
+| **Zone 2** | **60-70%** | **THE MONEY ZONE — do most cardio here** |
+| Zone 3 | 70-80% | Moderate, "grey zone" — least efficient |
+| Zone 4 | 80-90% | Hard, threshold work |
+| Zone 5 | 90-100% | Max effort, sprint intervals |
 
 ## Sleep Protocol (Non-Negotiable)
 
 Sleep is not a luxury. It's the single highest-ROI performance intervention.
 
-```
-┌──────────────────────────────────────────────┐
-│            SLEEP OPTIMIZATION                │
-├──────────────────────────────────────────────┤
-│                                              │
-│  TARGET: 7-9 hours                           │
-│                                              │
-│  Evening:                                    │
-│  • Last caffeine by 2 PM (8-10hr half-life) │
-│  • Dim lights 1-2 hours before bed           │
-│  • Room temp: 65-68°F / 18-20°C             │
-│  • No screens 30 min before sleep            │
-│  • Same bedtime ±30 min, even weekends       │
-│                                              │
-│  Morning:                                    │
-│  • Sunlight within 30 min of waking          │
-│  • No snooze — one alarm, get up             │
-│  • Consistent wake time (more important      │
-│    than bedtime)                              │
-│                                              │
-└──────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph evening["Evening Protocol"]
+        direction TB
+        E1["Last caffeine by 2 PM<br/>(8-10hr half-life)"]
+        E2["Dim lights 1-2 hours before bed"]
+        E3["Room temp: 65-68°F / 18-20°C"]
+        E4["No screens 30 min before sleep"]
+        E5["Same bedtime ±30 min, even weekends"]
+    end
+    subgraph morning["Morning Protocol"]
+        direction TB
+        M1["Sunlight within 30 min of waking"]
+        M2["No snooze — one alarm, get up"]
+        M3["Consistent wake time<br/>(more important than bedtime)"]
+    end
+    subgraph target["TARGET: 7-9 HOURS"]
+        evening --> morning
+    end
+    style evening fill:#1a1a2e,stroke:#e94560,color:#eee
+    style morning fill:#16213e,stroke:#0f3460,color:#eee
+    style target fill:#0d1117,stroke:#e94560,color:#e94560
 ```
 
 ## Nutrition Fundamentals
@@ -120,22 +128,12 @@ Don't overcomplicate this. 80% of results come from:
 3. **Hydration**: Half your bodyweight (lbs) in oz of water daily
 4. **Consistency**: A decent plan followed daily beats a perfect plan followed sometimes
 
-```
-Plate Model:
-┌───────────────────────────┐
-│         ┌────────┐        │
-│    Protein (palm) │        │
-│         └────┬───┘        │
-│   ┌─────────┴─────────┐  │
-│   │  Vegetables (fist) │  │
-│   └─────────┬─────────┘  │
-│   ┌─────────┴─────────┐  │
-│   │ Carbs (cupped hand)│  │
-│   └─────────┬─────────┘  │
-│   ┌─────────┴─────────┐  │
-│   │  Fats (thumb)      │  │
-│   └───────────────────┘  │
-└───────────────────────────┘
+```mermaid
+pie title Plate Model (by portion)
+    "Protein (palm)" : 30
+    "Vegetables (fist)" : 30
+    "Carbs (cupped hand)" : 25
+    "Fats (thumb)" : 15
 ```
 
 ## Recovery Checklist

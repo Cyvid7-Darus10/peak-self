@@ -4,23 +4,21 @@
 
 ## The Growth Framework
 
+```mermaid
+flowchart LR
+    Skills -->|produce| Output
+    Output -->|builds| Reputation
+    Reputation -->|unlocks| Opportunities
+    Opportunities -->|provide| Feedback
+    Feedback -->|sharpen| Skills
+    style Skills fill:#e94560,stroke:#e94560,color:#fff
+    style Output fill:#0f3460,stroke:#0f3460,color:#fff
+    style Reputation fill:#0a8754,stroke:#0a8754,color:#fff
+    style Opportunities fill:#e67e22,stroke:#e67e22,color:#fff
+    style Feedback fill:#8e44ad,stroke:#8e44ad,color:#fff
 ```
-┌──────────────────────────────────────────────────┐
-│              CAREER GROWTH ENGINE                │
-├──────────────────────────────────────────────────┤
-│                                                  │
-│   Skills ──────→ Output ──────→ Reputation       │
-│     ↑              │               │             │
-│     │              │               │             │
-│     │              ▼               ▼             │
-│     └──── Feedback + Opportunities ──────┘       │
-│                                                  │
-│   The flywheel: better skills → better output    │
-│   → more visibility → more opportunities         │
-│   → harder problems → better skills              │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
+
+> The flywheel: better skills → better output → more visibility → more opportunities → harder problems → better skills
 
 ## Skill Acquisition Protocol
 
@@ -28,68 +26,61 @@
 
 Go deep in 1-2 areas, then broad across adjacent skills.
 
-```
-Breadth ──────────────────────────────────
-         │               │
-         │               │
-         │               │    Depth
-         │               │
-         │               │
-         ▼               ▼
-
-Example (Software Engineer):
-─ Design ─ Product ─ Data ─ DevOps ─ Business ─
-                     │
-                     │  Backend Engineering
-                     │  System Design
-                     │  Distributed Systems
-                     │  Performance Optimization
-                     ▼
+```mermaid
+flowchart TD
+    subgraph breadth["BREADTH"]
+        direction LR
+        Design --- Product --- Data --- DevOps --- Business
+    end
+    Data --> Depth
+    subgraph Depth["DEPTH (Primary Skill)"]
+        direction TB
+        D1["Backend Engineering"]
+        D2["System Design"]
+        D3["Distributed Systems"]
+        D4["Performance Optimization"]
+    end
+    D1 --> D2 --> D3 --> D4
+    style breadth fill:#16213e,stroke:#0f3460,color:#eee
+    style Depth fill:#1a1a2e,stroke:#e94560,color:#eee
 ```
 
 ### Deliberate Practice (Not Just Reps)
 
+```mermaid
+flowchart LR
+    A["Identify<br/>weakness"] --> B["Design<br/>exercise"] --> C["Execute with<br/>full attention"] --> D["Get immediate<br/>feedback"] --> E["Adjust"] --> A
+    style A fill:#e94560,stroke:#e94560,color:#fff
+    style B fill:#c0392b,stroke:#c0392b,color:#fff
+    style C fill:#e67e22,stroke:#e67e22,color:#fff
+    style D fill:#2980b9,stroke:#2980b9,color:#fff
+    style E fill:#8e44ad,stroke:#8e44ad,color:#fff
 ```
-┌──────────────────────────────────────────────┐
-│         DELIBERATE PRACTICE LOOP             │
-├──────────────────────────────────────────────┤
-│                                              │
-│  1. Identify specific weakness               │
-│  2. Design exercise targeting that weakness  │
-│  3. Execute with full attention              │
-│  4. Get immediate feedback                   │
-│  5. Adjust and repeat                        │
-│                                              │
-│  10,000 hours of autopilot = mediocrity      │
-│  1,000 hours of deliberate practice = elite  │
-│                                              │
-└──────────────────────────────────────────────┘
-```
+
+> 10,000 hours of autopilot = mediocrity. 1,000 hours of deliberate practice = elite.
 
 ## Leverage: Work on the Right Things
 
 Not all work compounds equally. Prioritize high-leverage activities.
 
+```mermaid
+quadrantChart
+    title Effort vs Impact Matrix
+    x-axis Low Effort --> High Effort
+    y-axis Low Impact --> High Impact
+    quadrant-1 DO THIS FIRST
+    quadrant-2 Quick Wins — do immediately
+    quadrant-3 IGNORE — eliminate ruthlessly
+    quadrant-4 Time Traps — schedule or batch
+    Deep work projects: [0.8, 0.9]
+    Career-defining features: [0.9, 0.85]
+    Quick documentation: [0.3, 0.7]
+    Mentoring juniors: [0.4, 0.75]
+    Unnecessary meetings: [0.6, 0.2]
+    Bike-shedding PRs: [0.7, 0.15]
+    Slack messages: [0.2, 0.3]
+    Email formatting: [0.15, 0.1]
 ```
-                    High Impact
-                        │
-              ┌─────────┼─────────┐
-              │    2     │    1    │
-              │ Delegate │ DO THIS │
-              │ or       │ FIRST   │
-   Low ───────┼──────────┼─────────┼──── High
-   Effort     │    4     │    3    │     Effort
-              │  IGNORE  │ Schedule│
-              │          │ or batch│
-              └─────────┼─────────┘
-                        │
-                    Low Impact
-```
-
-**Quadrant 1** (High Impact, High Effort): Deep work — the projects that move your career. Protect this time.
-**Quadrant 2** (High Impact, Low Effort): Quick wins — do these immediately, build momentum.
-**Quadrant 3** (Low Impact, High Effort): Time traps — schedule or batch, don't let them eat your day.
-**Quadrant 4** (Low Impact, Low Effort): Noise — eliminate ruthlessly.
 
 ## Building in Public
 
@@ -101,20 +92,18 @@ Visibility compounds. Your best work means nothing if nobody knows about it.
 - Speak at meetups (start small, local)
 - Help others publicly — it builds trust and reach
 
-```
-┌──────────────────────────────────────────┐
-│         VISIBILITY FLYWHEEL             │
-├──────────────────────────────────────────┤
-│                                          │
-│  Learn something → Share it publicly     │
-│       ↑                    │             │
-│       │                    ▼             │
-│  Get harder      People find you         │
-│  opportunities        │                  │
-│       ↑                ▼                 │
-│       └──── Conversations + trust ──┘    │
-│                                          │
-└──────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    A["Learn something"] --> B["Share it publicly"]
+    B --> C["People find you"]
+    C --> D["Conversations + trust"]
+    D --> E["Harder opportunities"]
+    E --> A
+    style A fill:#0a8754,stroke:#0a8754,color:#fff
+    style B fill:#2980b9,stroke:#2980b9,color:#fff
+    style C fill:#8e44ad,stroke:#8e44ad,color:#fff
+    style D fill:#e67e22,stroke:#e67e22,color:#fff
+    style E fill:#e94560,stroke:#e94560,color:#fff
 ```
 
 ## Networking That Actually Works
@@ -129,31 +118,30 @@ Forget "networking events." Build real relationships.
 
 ## Career Decision Framework
 
-When evaluating opportunities:
+When evaluating opportunities, rate each 1-10:
 
+```mermaid
+mindmap
+  root((Opportunity<br/>Scorecard))
+    Learning velocity
+      Will I grow fast?
+    People quality
+      Am I around people better than me?
+    Autonomy
+      Can I own outcomes?
+    Market value
+      Does this make me more valuable externally?
+    Alignment
+      Does this match my 5-year direction?
+    Compensation
+      Fair for the market?
 ```
-┌──────────────────────────────────────────────┐
-│           OPPORTUNITY SCORECARD              │
-├──────────────────────────────────────────────┤
-│                                              │
-│  Rate 1-10:                                  │
-│                                              │
-│  [ ] Learning velocity — will I grow fast?   │
-│  [ ] People quality — will I be around       │
-│      people better than me?                  │
-│  [ ] Autonomy — can I own outcomes?          │
-│  [ ] Market value — does this make me more   │
-│      valuable externally?                    │
-│  [ ] Alignment — does this match where I     │
-│      want to be in 5 years?                  │
-│  [ ] Compensation — fair for the market?     │
-│                                              │
-│  Early career: maximize learning velocity    │
-│  Mid career: maximize leverage + autonomy    │
-│  Late career: maximize impact + alignment    │
-│                                              │
-└──────────────────────────────────────────────┘
-```
+
+| Career Stage | Maximize |
+|---|---|
+| Early career | Learning velocity |
+| Mid career | Leverage + autonomy |
+| Late career | Impact + alignment |
 
 ## Weekly Career Review (30 min, Sunday)
 
