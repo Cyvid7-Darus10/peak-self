@@ -87,6 +87,20 @@
 | *Thinking, Fast and Slow* | Daniel Kahneman | Cognitive biases and dual-process thinking |
 | *Courage Is Calling* | Ryan Holiday | Practical Stoic courage for modern life |
 
+### Engineering
+| Book | Author | Key Takeaway |
+|------|--------|-------------|
+| *Designing Data-Intensive Applications* | Martin Kleppmann | The distributed systems bible |
+| *A Philosophy of Software Design* | John Ousterhout | Managing complexity in software |
+| *Staff Engineer* | Will Larson | Staff+ career guide with archetypes |
+| *An Elegant Puzzle* | Will Larson | Systems of engineering management |
+| *The Manager's Path* | Camille Fournier | Technical leadership ladder |
+| *Accelerate* | Forsgren, Humble, Kim | The DORA research book on DevOps |
+| *Site Reliability Engineering* | Google | SRE practices (free online) |
+| *System Design Interview Vol. 1 & 2* | Alex Xu | System design patterns and walkthroughs |
+| *The Pragmatic Programmer* | Hunt & Thomas | Timeless software craftsmanship |
+| *Clean Code* | Robert C. Martin | Readable, maintainable code (take selectively) |
+
 ## Newsletters & Blogs
 
 | Source | URL | Focus |
@@ -98,6 +112,11 @@
 | **Mark Manson** | https://markmanson.net/articles | Life philosophy, no-BS |
 | **Tim Ferriss — 5-Bullet Friday** | https://tim.blog | Curated weekly finds |
 | **Andrew Huberman Newsletter** | https://www.hubermanlab.com/newsletter | Protocols from the podcast |
+| **The Pragmatic Engineer** | https://www.pragmaticengineer.com/ | #1 for senior engineers — comp, architecture, culture |
+| **ByteByteGo** (Alex Xu) | https://blog.bytebytego.com/ | System design, distributed systems |
+| **TLDR Newsletter** | https://tldr.tech/ | Daily tech news digest |
+| **Software Lead Weekly** | https://softwareleadweekly.com/ | Engineering leadership |
+| **LeadDev** | https://leaddev.com/ | Staff+ engineering, scaling teams |
 
 ## Tools
 
@@ -132,6 +151,86 @@
 | Omega-3 (EPA/DHA) | 2-4g combined | With meals |
 | Magnesium glycinate | 200-400mg | Before bed |
 | Ashwagandha KSM-66 | 600mg | Daily |
+
+## Learning Roadmaps
+
+### Anthropic Academy (Free, Certificates)
+
+All courses at https://anthropic.skilljar.com/ — free, self-paced, with certificates on completion.
+
+```mermaid
+flowchart TD
+    subgraph fluency["AI Fluency Track (Non-Technical)"]
+        F1["AI Fluency: Framework & Foundations"]
+        F2["AI Fluency for Educators / Students / Nonprofits"]
+        F3["AI Capabilities and Limitations"]
+    end
+    subgraph product["Product Training"]
+        P1["Claude 101"]
+        P2["Introduction to Claude Cowork"]
+        P3["Claude Code in Action"]
+    end
+    subgraph dev["Developer Deep-Dives"]
+        D1["Building with the Claude API<br/>(8+ hours)"]
+        D2["Introduction to MCP"]
+        D3["MCP: Advanced Topics"]
+        D4["Introduction to Agent Skills"]
+        D5["Introduction to Subagents"]
+        D6["Claude with AWS Bedrock"]
+        D7["Claude with Google Vertex AI"]
+    end
+    P1 --> D1
+    D1 --> D2 --> D3
+    D1 --> D4 --> D5
+    style fluency fill:#16213e,stroke:#0f3460,color:#eee
+    style product fill:#1a1a2e,stroke:#8e44ad,color:#eee
+    style dev fill:#1a2c1a,stroke:#0a8754,color:#eee
+```
+
+**GitHub Notebooks** (hands-on): https://github.com/anthropics/courses (20K+ stars)
+
+```mermaid
+flowchart LR
+    A["1. API Fundamentals<br/>Keys, params, multimodal"] --> B["2. Prompt Engineering<br/>9 chapters + exercises"]
+    B --> C["3. Real World Prompting<br/>Complex, production prompts"]
+    C --> D["4. Prompt Evaluations<br/>Measuring prompt quality"]
+    D --> E["5. Tool Use<br/>6 lessons on tool integration"]
+    style A fill:#2980b9,stroke:#2980b9,color:#fff
+    style B fill:#0f3460,stroke:#0f3460,color:#fff
+    style C fill:#8e44ad,stroke:#8e44ad,color:#fff
+    style D fill:#e67e22,stroke:#e67e22,color:#fff
+    style E fill:#e94560,stroke:#e94560,color:#fff
+```
+
+Also available on **Coursera**: https://www.coursera.org/partners/anthropic
+
+### Senior Engineer Learning Path
+
+```mermaid
+flowchart TD
+    subgraph foundations["Phase 1: Foundations"]
+        direction TB
+        A1["System Design<br/>ByteByteGo Vol. 1 & 2<br/>Grokking (Educative)"]
+        A2["Distributed Systems<br/>Designing Data-Intensive<br/>Applications (Kleppmann)"]
+        A3["Software Design<br/>A Philosophy of Software<br/>Design (Ousterhout)"]
+    end
+    subgraph leadership["Phase 2: Technical Leadership"]
+        direction TB
+        B1["Staff+ Path<br/>Staff Engineer (Larson)<br/>staffeng.com"]
+        B2["Engineering Management<br/>An Elegant Puzzle (Larson)<br/>The Manager's Path (Fournier)"]
+        B3["SRE & Operations<br/>Google SRE Book (free)<br/>Accelerate (Forsgren)"]
+    end
+    subgraph ai["Phase 3: AI-Native Engineering"]
+        direction TB
+        C1["Anthropic Academy<br/>API → MCP → Agents<br/>anthropic.skilljar.com"]
+        C2["AI-Assisted Development<br/>Claude Code in Action<br/>Addy Osmani's workflow"]
+        C3["Building AI Products<br/>AI SDK, agent architecture<br/>production AI systems"]
+    end
+    foundations --> leadership --> ai
+    style foundations fill:#16213e,stroke:#0f3460,color:#eee
+    style leadership fill:#1a1a2e,stroke:#e94560,color:#eee
+    style ai fill:#1a2c1a,stroke:#0a8754,color:#eee
+```
 
 ## Key Numbers to Remember
 
