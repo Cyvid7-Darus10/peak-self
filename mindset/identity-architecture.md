@@ -118,7 +118,7 @@ Link a new behavior to an established habit's neural pathway instead of building
 
 ```mermaid
 flowchart TD
-    A["After I pour morning coffee"] --> B["I write in my journal for 5 min"]
+    A["After I finish breakfast"] --> B["I write in my journal for 5 min"]
     C["After I sit at my desk"] --> D["I write top 3 priorities"]
     E["After I finish lunch"] --> F["I read for 10 minutes"]
     G["After I close my laptop"] --> H["I review what I accomplished"]

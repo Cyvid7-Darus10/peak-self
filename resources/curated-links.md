@@ -141,7 +141,7 @@
 | Sleep | 7-9 hours | #1 performance intervention |
 | Zone 2 cardio | 150-180 min/week | Base building, longevity |
 | Protein | 1.6-2.2g/kg/day | Muscle repair and satiety |
-| Caffeine cutoff | 10 hrs before bed | Half-life is 5-6 hours |
+| Caffeine cutoff | 10 hrs before bed (if any) | Half-life is 5-6 hours. No caffeine = natural advantage |
 | Morning sunlight | 10 min within 30 min of waking | Sets circadian rhythm |
 | Cold exposure | 11 min/week (2-4 sessions) | 250% dopamine increase |
 | Sauna | 4-7x/week, 15-20 min | 40% reduction in all-cause mortality |

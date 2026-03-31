@@ -25,7 +25,7 @@ flowchart TB
         B["Notifications disabled"]
         C["Unrelated tabs closed"]
         D["Workspace clean"]
-        E["Water / coffee prepared"]
+        E["Water / tea prepared"]
         F["Task clearly defined"]
         G["Lighting: 350 lux, cool temp"]
         H["Room temp: 23-25°C"]
@@ -136,6 +136,8 @@ After 90 minutes, forcing more deep work yields diminishing returns. The break i
 
 ## Caffeine Timing Science
 
+Applies to all caffeine sources: tea, matcha, energy drinks, pre-workout, soda — not just coffee.
+
 ```mermaid
 gantt
     title Optimal Caffeine Window
@@ -152,10 +154,11 @@ gantt
 ```
 
 - **Wait 90 minutes after waking** before your first caffeine. Cortisol peaks 30-45 min after waking and naturally promotes alertness. Caffeine during this peak wastes the effect and blunts your cortisol response over time
-- **Caffeine doesn't create energy** — it blocks adenosine receptors, masking fatigue. Drinking it immediately means adenosine is still there and hits you later as the "afternoon crash"
-- **Half-life: 5-6 hours.** A cup at 2pm means half the caffeine is active at 7-8pm
+- **Caffeine doesn't create energy** — it blocks adenosine receptors, masking fatigue. Consuming it immediately means adenosine is still there and hits you later as the "afternoon crash"
+- **Half-life: 5-6 hours.** Caffeine at 2pm means half is still active at 7-8pm
 - **Evening caffeine delays melatonin by ~40 minutes** (Science Translational Medicine)
 - **Conservative cutoff**: No caffeine within 10 hours of bedtime
+- **If you skip caffeine entirely** — you already have an advantage. Your natural cortisol/adenosine cycle runs unmasked, meaning more stable energy throughout the day and better sleep quality by default
 
 ---
 
@@ -301,8 +304,7 @@ gantt
     section Afternoon
         Meetings, admin, shallow       :11:25, 240m
     section Notes
-        First caffeine at 07:30        :milestone, 07:30, 0m
-        Last caffeine by 13:00         :milestone, 13:00, 0m
+        Caffeine-free advantage         :milestone, 07:30, 0m
 ```
 
 > **Key insight**: Prioritize analytical/implementation tasks in the morning (0-8 hours after waking) when norepinephrine and cortisol are elevated. Shift to creative/brainstorming work in the afternoon when serotonin is relatively higher.

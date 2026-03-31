@@ -208,7 +208,7 @@ Sleep is the single highest-ROI performance intervention.
 flowchart TB
     subgraph evening["Evening Protocol"]
         direction TB
-        E1["Last caffeine 10 hrs before bed"]
+        E1["Last caffeine 10 hrs before bed<br/>(if you consume any)"]
         E2["Dim lights 1-2 hours before bed"]
         E3["Room temp: 18-20°C / 65-68°F"]
         E4["No screens 30 min before sleep"]
