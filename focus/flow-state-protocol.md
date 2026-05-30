@@ -126,11 +126,11 @@ flowchart LR
 
 ## Ultradian Rhythms: The 90-Minute Rule
 
-Your brain operates in ~90-minute ultradian cycles of higher and lower alertness (the same cycles that govern sleep stages at night). Professionals who aligned work with 90-minute cycles experienced **40% higher productivity** and **50% less mental fatigue** (Journal of Cognition).
+Your brain operates in ~90-minute ultradian cycles of higher and lower alertness (the same cycles that govern sleep stages at night, first described by sleep researcher Nathaniel Kleitman). Aligning focused work to these cycles — pushing hard while alertness is high, then resting at the trough — works *with* your biology instead of against it.
 
 After 90 minutes, forcing more deep work yields diminishing returns. The break is not optional — it's when the brain consolidates what was processed.
 
-**DeskTime research** on the most productive 10% of users found they worked **52 minutes**, then broke for **17 minutes** on average.
+**DeskTime research** on the most productive 10% of users found they worked **52 minutes**, then broke for **17 minutes** on average (from DeskTime's original 2014 analysis; a later look put it closer to 112/26 — the principle, not the exact ratio, is what matters).
 
 ---
 
@@ -199,7 +199,7 @@ mindmap
       Flow cannot be entered in fragmented sessions
 ```
 
-> Kotler's program measured an average **70% improvement** across seven flow metrics.
+> Kotler's Flow Research Collective reports an average **70% improvement** across seven flow metrics in its own training programs (a program/marketing metric, not a peer-reviewed result — but the triggers themselves are well grounded).
 
 ---
 
@@ -245,7 +245,7 @@ flowchart TD
 "Dopamine detox" is misleading — no evidence supports it. What the science actually shows:
 
 - **Avoid dopamine stacking** — layering multiple pleasurable stimuli (music + phone + coffee + pre-workout) before a task creates an artificial peak followed by a crash below baseline, killing motivation
-- **Cold exposure**: 1-5 minutes at 4-10°C (40-50°F) produces a **250% increase in dopamine** above baseline, lasting 2-5+ hours. Comparable to stimulant medications but without the crash. Target ~11 minutes/week across 2-4 sessions (Huberman)
+- **Cold exposure**: a sustained, hours-long rise in dopamine above baseline without the crash that follows stimulants. (The widely quoted "250% increase" comes from ~1 hour in 14°C water; short 1-5 min plunges give a smaller but still meaningful bump.) Target ~11 minutes/week across 2-4 sessions at 4-10°C / 40-50°F (Huberman)
 - **Reduce supernormal stimuli**: Social media, porn, ultra-processed food, gambling hijack the reward system with larger spikes than natural rewards
 - **Pursue "earned dopamine"**: Exercise, completing hard work, learning, and social connection provide dopamine through healthier pathways
 - **Think about the anticipation, not the reward**: Positive anticipation of goals generates sustained dopamine lasting hours to days
@@ -320,6 +320,6 @@ Most people can sustain 3-4 hours of true deep work per day. That's enough to ou
 - Nir Eyal — *Indistractable*
 - Chris Bailey — *Hyperfocus*
 - DeskTime — 52/17 productivity research
-- Journal of Cognition — Ultradian rhythm study
+- Nathaniel Kleitman — Basic Rest-Activity Cycle (ultradian rhythms)
 - Science Translational Medicine — Caffeine and circadian rhythm
 - UC Irvine — Notification recovery time research

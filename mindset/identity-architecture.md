@@ -102,13 +102,14 @@ You don't need a perfect record. You need a majority. Win more votes than you lo
 
 ## Habit Stacking & Implementation Intentions
 
-### The Research (One of Psychology's Most Replicated Findings)
+### The Research (A Robust, Well-Replicated Effect)
 
-Peter Gollwitzer's implementation intentions research:
-- **Specific plan** ("If it's Monday at 6 AM, then I will go to the gym") = **91% success rate**
-- **Vague intention** ("I will exercise") = **29% success rate**
+In a classic exercise study (Milne, Orbell & Sheeran), participants given an implementation-intention prompt vs. motivation alone:
+- **Specific if-then plan** ("If it's Monday at 6 AM, then I will go to the gym") = **91% followed through**
+- **Motivation only** ("I want to exercise") = **39% followed through**
+- **No intervention (control)** = **29%**
 
-People who make specific if-then plans are **2-3x more likely** to achieve their goals.
+Across many studies, if-then plans produce a medium effect (d ≈ 0.65) — people who make them are roughly **2-3x more likely** to achieve their goals.
 
 ### Habit Stacking Formula
 
@@ -177,7 +178,7 @@ Neuroimaging (fMRI, EEG) shows that imagining an action activates the **same bra
 
 ## Stoic Philosophy (Practical Applications)
 
-Stoicism was the original inspiration for **Cognitive-Behavioral Therapy (CBT)**, the leading form of evidence-based psychotherapy. Practicing Stoicism: **+13% positive emotions, -21% negative emotions** (Modern Stoicism research).
+Stoicism was the original inspiration for **Cognitive-Behavioral Therapy (CBT)**, the leading form of evidence-based psychotherapy. Participants in Modern Stoicism's "Stoic Week" self-report roughly **+13% positive emotions and -21% negative emotions** (a self-selected online survey, not a controlled trial — directional, not definitive).
 
 ### Daily Techniques
 

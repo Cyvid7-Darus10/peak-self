@@ -103,6 +103,8 @@ flowchart TD
 
 ## Salary Benchmarks (2024-2025, Levels.fyi)
 
+> These are top-payer snapshots and drift quickly — top-of-market numbers have crept higher since (e.g. OpenAI and Databricks now sit well above the figures below). Treat them as a directional floor for the top tier, and check [Levels.fyi](https://www.levels.fyi/) for live data.
+
 ### Senior Engineer Total Comp (Top Payers)
 
 | Company | Level | Median Total Comp |
@@ -246,7 +248,7 @@ Async-first remote teams report **22% increase in engineering productivity**. 78
 - Build complete, deployed projects — not half-finished experiments
 - Use side projects to learn emerging tech before it's needed at work
 
-## Key Reading
+## References
 
 - Tanya Reilly — *The Staff Engineer's Path*
 - Will Larson — *Staff Engineer* + *An Elegant Puzzle*

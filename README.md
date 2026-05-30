@@ -10,6 +10,8 @@ peak-self/
 │   └── flow-state-protocol.md
 ├── fitness/            # Training, nutrition, recovery, sleep
 │   └── training-protocol.md
+├── health/             # Supplements, longevity stack, daily routine
+│   └── supplement-stack.md
 ├── career/             # Career growth, skill acquisition, networking
 │   ├── growth-system.md
 │   └── senior-engineer-roadmap.md
@@ -19,6 +21,8 @@ peak-self/
 │   └── dev-setup.md
 ├── mindset/            # Identity, habits, mental models
 │   └── identity-architecture.md
+├── hobbies/            # Interests, side projects, things I'm building
+│   └── interests.md
 └── resources/          # Curated links, videos, books
     └── curated-links.md
 ```
@@ -35,14 +39,16 @@ This repo is a living system — not a collection of tips. Each section contains
 ### Life Operating System
 1. Start with [Focus Protocol](focus/flow-state-protocol.md) — everything else compounds from here
 2. Build your [Training Base](fitness/training-protocol.md) — physical energy fuels mental output
-3. Design your [Career System](career/growth-system.md) — deliberate moves, not drift
-4. Develop your [Operating Identity](mindset/identity-architecture.md) — become the person who does this by default
+3. Dial in your [Supplement Stack](health/supplement-stack.md) — the daily longevity routine and what it costs
+4. Design your [Career System](career/growth-system.md) — deliberate moves, not drift
+5. Develop your [Operating Identity](mindset/identity-architecture.md) — become the person who does this by default
+6. Pursue what you [actually enjoy](hobbies/interests.md) — reading, side projects, and the things I'm building
 
 ### Engineering Excellence
-5. Map your [Career Roadmap](career/senior-engineer-roadmap.md) — Senior → Staff → Principal ladder, IC vs management, salary benchmarks
-6. Master the [Engineering Principles](engineering/principles.md) — Laws every senior engineer should know, debugging models, DORA metrics
-7. Level up your [Engineering Practices](engineering/practices.md) — ADRs, RFCs, code review, postmortems, documentation-driven development
-8. Optimize your [Dev Setup](engineering/dev-setup.md) — Claude Code, terminal tools, AI workflows, CI/CD, dotfiles
+1. Map your [Career Roadmap](career/senior-engineer-roadmap.md) — Senior → Staff → Principal ladder, IC vs management, salary benchmarks
+2. Master the [Engineering Principles](engineering/principles.md) — Laws every senior engineer should know, debugging models, DORA metrics
+3. Level up your [Engineering Practices](engineering/practices.md) — ADRs, RFCs, code review, postmortems, documentation-driven development
+4. Optimize your [Dev Setup](engineering/dev-setup.md) — Claude Code, terminal tools, AI workflows, CI/CD, dotfiles
 
 ## Principles
 

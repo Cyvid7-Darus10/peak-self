@@ -88,14 +88,16 @@ Exit code 0 = allow, exit code 2 = block.
 
 ```bash
 # Essential trio (covers 90% of dev needs)
-claude mcp add github -- npx -y @modelcontextprotocol/server-github
-claude mcp add playwright -- npx -y @anthropic-ai/mcp-server-playwright
-claude mcp add context7 -- npx -y @anthropic-ai/mcp-server-context7
+claude mcp add github -- npx -y @github/github-mcp-server      # GitHub's official server
+claude mcp add playwright -- npx -y @playwright/mcp            # Microsoft-maintained
+claude mcp add context7 -- npx -y @upstash/context7-mcp        # Upstash — live library docs
 
 # Additional useful servers
-claude mcp add brave-search -e BRAVE_API_KEY=xxx -- npx -y @anthropic-ai/mcp-server-brave-search
-claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres
+claude mcp add brave-search -e BRAVE_API_KEY=xxx -- npx -y @brave/brave-search-mcp-server
+claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres   # community server
 ```
+
+> Package names drift fast — always confirm against the [MCP servers registry](https://github.com/modelcontextprotocol/servers) before installing. The older `@modelcontextprotocol/server-github` and `server-postgres` packages are now archived in favor of the maintained ones above.
 
 ### Permissions (Lock Down)
 
@@ -136,7 +138,7 @@ flowchart TD
     style G fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> **AI drafts, engineers decide.** 82% of professional developers now use AI assistants daily (Stack Overflow 2025), up from 48% in 2024.
+> **AI drafts, engineers decide.** 84% of developers now use or plan to use AI tools (Stack Overflow 2025 Developer Survey, up from 76% in 2024), with roughly half using them daily.
 
 ### Key Principles
 

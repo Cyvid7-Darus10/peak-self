@@ -178,11 +178,13 @@ flowchart TD
     subgraph stability["Stability"]
         C["Change Failure Rate<br/>% of deploys causing failures"]
         D["Failed Deploy Recovery<br/>Time to recover"]
-        E["Deployment Rework Rate<br/>Unplanned deploys from incidents"]
+        E["Reliability<br/>Operational performance vs. SLOs"]
     end
     style throughput fill:#16213e,stroke:#0f3460,color:#eee
     style stability fill:#1a1a2e,stroke:#e94560,color:#eee
 ```
+
+> The classic DORA model is **four** metrics (deploy frequency, lead time, change failure rate, failed-deployment recovery time). **Reliability** was added in 2021 as the fifth. Treat them as a balanced set — gaming any one in isolation (Goodhart's Law) defeats the purpose.
 
 ### Performance Benchmarks
 

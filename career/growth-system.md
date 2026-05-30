@@ -165,7 +165,7 @@ flowchart TD
 
 ### The Science
 
-- **Anchoring effect**: Candidates who asked for $100K were offered an average of $35,383 vs $32,463 in the control group. The first number anchors everything — always anchor high
+- **Anchoring effect**: Candidates who asked for $100K were offered an average of $35,385 vs $32,463 in the control group. The first number anchors everything — always anchor high
 - **Initiate the conversation**: Studies show candidates who bring up salary first tend to earn more
 - **Collaborating > Compromising**: Compromising and accommodating strategies were NOT linked to salary gains. Problem-solving for mutual benefit yields the best outcomes
 

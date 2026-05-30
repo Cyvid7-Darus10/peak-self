@@ -5,7 +5,7 @@
 ## Training Philosophy
 
 ```mermaid
-graph TB
+flowchart TB
     subgraph pyramid["THE PERFORMANCE PYRAMID"]
         direction TB
         A["Peak Performance<br/>(sport-specific)"]
@@ -120,7 +120,7 @@ xychart-beta
 
 ### VO2max (The #1 Longevity Predictor)
 
-**VO2max is the single strongest predictor of all-cause mortality** — larger impact than smoking, diabetes, or heart disease. Bottom 25th percentile carries **4x mortality risk** vs top 2.5%. It declines ~10% per decade after 25 — training can slow or reverse this.
+**VO2max is the single strongest predictor of all-cause mortality** — larger impact than smoking, diabetes, or heart disease. The lowest-fit group carries roughly **5x the mortality risk** of elite fitness (2018 JAMA, Mandsager et al., 122,000+ patients). It declines ~10% per decade after 25 in the sedentary (~5%/decade if trained) — training can slow or reverse this.
 
 **The Norwegian 4x4 Protocol** (gold standard):
 1. 4 minutes at 90-95% max HR
@@ -145,21 +145,21 @@ xychart-beta
 flowchart LR
     A["Temperature<br/>10-15°C (50-59°F)<br/>Beginners: 15-18°C"] --> B["Duration<br/>2-5 min per session"]
     B --> C["Weekly target<br/>11 min total<br/>across 2-4 sessions"]
-    C --> D["Benefits<br/>250% dopamine increase<br/>20-30% less DOMS"]
+    C --> D["Benefits<br/>dopamine increase<br/>20-30% less DOMS"]
     style A fill:#2980b9,stroke:#2980b9,color:#fff
     style B fill:#0f3460,stroke:#0f3460,color:#fff
     style C fill:#16213e,stroke:#16213e,color:#fff
     style D fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> **CRITICAL**: Cold water immersion immediately after strength training **blunts hypertrophy by ~25%** over 12 weeks. It attenuates satellite cell activation and anabolic signaling. Wait 6-8 hours after resistance training, or save cold plunges for rest/cardio days.
+> **CRITICAL**: Cold water immersion immediately after strength training **may attenuate hypertrophy** — it blunts satellite-cell activation and anabolic signaling. (The often-cited "~25%" comes from one small 2015 study; a 2024 meta-analysis found only a small, low-certainty effect — but the mechanism is real, so don't risk it.) Wait 6-8 hours after resistance training, or save cold plunges for rest/cardio days. The 250% dopamine spike often quoted comes from ~1 hour in 14°C water, not a short 2-5 min plunge — expect a smaller bump.
 
 ### Sauna
 
 - **Temperature**: 80-100°C (176-212°F) for Finnish sauna. 60°C for infrared
 - **Duration**: 15-20 min per session (traditional). 30-40 min (infrared)
 - **Frequency**: 4-7 sessions/week for maximum cardiovascular benefit
-- **Finnish study (25,000+ men, 20 years)**: 4-7 sauna sessions/week → **40% reduction in all-cause mortality** vs 1 session/week
+- **Finnish KIHD study (2,300+ men, ~20 years)**: 4-7 sauna sessions/week → **40% reduction in all-cause mortality** vs 1 session/week
 - Also linked to reduced dementia, Alzheimer's, and cardiovascular disease risk
 
 ---
@@ -332,7 +332,7 @@ Recovery is where adaptation happens. Training is the stimulus; recovery is the 
 - Jeff Nippard — Evidence-based training (YouTube)
 - Renaissance Periodization — Volume landmarks and programming
 - Andrew Huberman — Cold exposure, sauna, breathing protocols
-- Finnish Cardiovascular Risk Factor Study — Sauna and mortality (25,000+ men, 20 years)
+- Finnish KIHD Study (Laukkanen et al.) — Sauna and mortality (2,300+ men, ~20 years)
 - Journal of Applied Physiology (2024) — Progressive overload studies
 - Norwegian University of Science and Technology — 4x4 interval protocol
 - Stanford (2021) — Fermented foods and gut microbial diversity

@@ -144,6 +144,8 @@
 
 ### Supplements (Quick Reference)
 
+> Dosing science lives in [Training Protocol → Supplement Stack](../fitness/training-protocol.md#evidence-based-supplement-stack); my actual daily routine and costs are in [Health → Supplement Stack](../health/supplement-stack.md). Quick recap below.
+
 | Supplement | Dosage | When |
 |---|---|---|
 | Creatine monohydrate | 5g | Daily (any time) |
@@ -242,9 +244,9 @@ flowchart TD
 | Protein | 1.6-2.2g/kg/day | Muscle repair and satiety |
 | Caffeine cutoff | 10 hrs before bed (if any) | Half-life is 5-6 hours. No caffeine = natural advantage |
 | Morning sunlight | 10 min within 30 min of waking | Sets circadian rhythm |
-| Cold exposure | 11 min/week (2-4 sessions) | 250% dopamine increase |
+| Cold exposure | 11 min/week (2-4 sessions) | Sustained dopamine rise, no crash |
 | Sauna | 4-7x/week, 15-20 min | 40% reduction in all-cause mortality |
 | Grip strength | Men 40+ kg, Women 25+ kg | Top longevity predictor |
-| VO2max | Train to stay top 25th percentile | #1 predictor of all-cause mortality |
+| VO2max | Train to stay out of the lowest-fit group | #1 predictor of all-cause mortality |
 | Gratitude journaling | 1-2x/week (not daily) | Weekly > daily per research |
-| Implementation intentions | "If X, then Y" format | 91% vs 29% success rate |
+| Implementation intentions | "If X, then Y" format | 91% vs 39% follow-through |
