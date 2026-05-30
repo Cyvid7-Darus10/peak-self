@@ -150,6 +150,47 @@ flowchart TD
 
 ---
 
+## Read Every Line: Understanding AI-Generated Code
+
+> **Recent hard-won lesson:** the moment you stop reading the code line by line, you stop being the engineer and become a passenger. AI writes the code, but **you own it** — in code review, in production at 3 AM, and in your own understanding of the system.
+
+Accepting code you don't fully understand feels fast. It isn't. You're not saving time — you're **borrowing it at high interest**, and the debt comes due during the worst possible debugging session.
+
+```mermaid
+flowchart TD
+    A["AI generates code"] --> B{"Do I understand<br/>every line?"}
+    B -->|"No — just accept it"| C["Looks fine, ship it"]
+    C --> D["Hidden bug / wrong abstraction /<br/>subtle security hole<br/>silently enters the codebase"]
+    D --> E["Breaks in production<br/>I can't debug what<br/>I never understood"]
+    B -->|"Yes — read & verify"| F["Catch the bug now,<br/>learn the pattern,<br/>own the system"]
+    style C fill:#7b241c,stroke:#7b241c,color:#fff
+    style D fill:#c0392b,stroke:#c0392b,color:#fff
+    style E fill:#c0392b,stroke:#c0392b,color:#fff
+    style F fill:#0a8754,stroke:#0a8754,color:#fff
+```
+
+### Why this matters more, not less, in the AI era
+
+- **AI is a confident bullshitter.** It produces plausible-looking code that compiles and *usually* works — which is exactly what makes its mistakes dangerous. The errors aren't obvious syntax breaks; they're subtle: an off-by-one, a wrong default, a swallowed error, an N+1 query, a race condition, a hallucinated API that happens to exist but does something else.
+- **Volume hides defects.** AI raises PR size by ~150%. More code reviewed less carefully = more bugs slipping through. The bottleneck has shifted from *writing* to *verifying* — so verification is now the senior skill (Addy Osmani: the senior engineer's job is "ensuring the right code gets written").
+- **You can't review what you don't understand.** "LGTM" on code you skimmed is theater. If you can't explain *why* each line is there, you haven't reviewed it — you've rubber-stamped it.
+- **Security & correctness don't degrade gracefully.** A hallucinated package name (slopsquatting), a missing input validation, or an unsafe default won't announce itself. It sits quietly until it's exploited.
+- **Skill atrophy is real.** Every line you accept without understanding is a rep you didn't do. Over months, "vibe coding" erodes the exact judgment that makes you valuable — and that you need to catch the AI's mistakes in the first place.
+
+### The discipline: how to actually do it
+
+1. **Read it like a code review you're accountable for** — because you are. Walk every line and ask: *What does this do? Why is it here? What happens at the edges (null, empty, huge, concurrent)?*
+2. **If you don't understand a line, stop.** Ask the AI to explain it, look it up, or rewrite it into something you *do* understand. Never let an unexplained line survive.
+3. **Trace the data and the failure paths**, not just the happy path. Where does input come from? What's unvalidated? What error is being swallowed?
+4. **Verify the externals exist and behave as claimed** — APIs, library functions, package names, flags. AI hallucinates these confidently.
+5. **Small batches.** Generate and review in chunks you can fully hold in your head, not 800-line dumps. Commit granularly so each save point is understood.
+6. **Make the AI justify itself.** "Why this approach over X?" "What are the edge cases?" "What did you assume?" A second AI session reviewing the first one's output catches a surprising amount.
+7. **Run it and prove it** — tests, not vibes. If you can't write a test for it, you don't understand it well enough.
+
+> **The rule:** if it's in your commit, you can explain every line of it. AI drafts; you read, understand, and decide. The keystrokes got cheaper — the *understanding* is the job.
+
+---
+
 ## Terminal & CLI Setup
 
 ### The Stack

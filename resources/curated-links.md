@@ -23,6 +23,10 @@
 - **Naval Ravikant — How to Get Rich (Without Getting Lucky)**: https://www.youtube.com/watch?v=1-TZqOsVCNM
 - **Y Combinator — Startup School**: https://www.youtube.com/@ycombinator
 - **Sahil Bloom — Growth Frameworks**: https://www.youtube.com/@SahilBloom
+- **Alex Hormozi — Offers, sales, scaling**: https://www.youtube.com/@AlexHormozi
+- **Greg Isenberg — Startup ideas & indie business**: https://www.youtube.com/@GregIsenberg
+- **Starter Story — Founder case studies**: https://www.youtube.com/@StarterStory
+- **My First Million — Business ideas podcast**: https://www.youtube.com/@MyFirstMillionPod
 
 ### Mindset & Philosophy
 - **Jocko Willink — Discipline Equals Freedom**: https://www.youtube.com/@JockoWillink
@@ -46,6 +50,11 @@
 | **Finding Mastery** (Dr. Michael Gervais) | High-performance psych | How elite performers think |
 | **The Happiness Lab** (Dr. Laurie Santos) | Science of happiness | Yale research, evidence-based |
 | **Ten Percent Happier** (Dan Harris) | Mindfulness | Meditation with healthy skepticism |
+| **Lenny's Podcast** (Lenny Rachitsky) | Product, growth, startups | The #1 product/startup interview show |
+| **My First Million** (Shaan Puri, Sam Parr) | Business ideas + building | Idea generation, opportunity spotting |
+| **The SaaS Podcast** (Omer Khan) | SaaS founder interviews | Practical bootstrapped-SaaS tactics |
+| **Acquired** (Ben Gilbert, David Rosenthal) | Company deep-dives | How great companies were actually built |
+| **The Twenty Minute VC** (Harry Stebbings) | Venture + scaling | Candid founder/investor conversations |
 
 ## Books (Essentials)
 
@@ -74,6 +83,19 @@
 | *Range* | David Epstein | Generalists often outperform specialists |
 | *Show Your Work* | Austin Kleon | Share your process, not just results |
 | *Poor Charlie's Almanack* | Charlie Munger | Mental models from multiple disciplines |
+
+### Business & Startups
+| Book | Author | Key Takeaway |
+|------|--------|-------------|
+| *The Mom Test* | Rob Fitzpatrick | Talk to customers without lying to yourself |
+| *The Lean Startup* | Eric Ries | Build-measure-learn, MVP, pivot-or-persevere |
+| *Zero to One* | Peter Thiel | Monopoly, moats, contrarian bets |
+| *$100M Offers* | Alex Hormozi | Build an offer people can't refuse |
+| *Demand-Side Sales 101* | Bob Moesta | Jobs To Be Done + the Four Forces of progress |
+| *The Founder's Dilemmas* | Noam Wasserman | Co-founder, equity, and control traps to avoid |
+| *Start Small, Stay Small* | Rob Walling | The bootstrapper's stair-step approach |
+| *The Embedded Entrepreneur* | Arvid Kahl | Audience-first business building |
+| *Obviously Awesome* | April Dunford | Positioning that makes products click |
 
 ### Mindset
 | Book | Author | Key Takeaway |
@@ -117,6 +139,13 @@
 | **TLDR Newsletter** | https://tldr.tech/ | Daily tech news digest |
 | **Software Lead Weekly** | https://softwareleadweekly.com/ | Engineering leadership |
 | **LeadDev** | https://leaddev.com/ | Staff+ engineering, scaling teams |
+| **Lenny's Newsletter** | https://www.lennysnewsletter.com/ | #1 product, growth & startup newsletter |
+| **First Round Review** | https://review.firstround.com/ | Deep operator playbooks from top founders |
+| **SaaStr** (Jason Lemkin) | https://www.saastr.com/ | The bible for B2B SaaS go-to-market |
+| **Growth Unhinged** (Kyle Poyar) | https://www.growthunhinged.com/ | Pricing, monetization, GTM benchmarks |
+| **The Bootstrapped Founder** (Arvid Kahl) | https://thebootstrappedfounder.com/ | Audience-first, indie SaaS |
+| **Indie Hackers** | https://www.indiehackers.com/ | Bootstrapped founder community + stories |
+| **a16z** | https://a16z.com/ | AI, startups, market theses |
 
 ## Tools
 
@@ -141,6 +170,27 @@
 | **[Isip](https://isip.pastelero.ph)** | Todo + journal app (I built this) — completed todos auto-generate journal entries |
 | **Streaks** (iOS) | Simple daily habit tracker |
 | **Pen and paper** | Still the best for daily review — zero distractions |
+
+### Dev & AI (the 2026 solo-builder stack)
+| Tool | Purpose |
+|------|---------|
+| **Claude Code** | Agentic coding in the terminal/IDE — primary build tool |
+| **Cursor** | AI-native code editor |
+| **v0 / Bolt / Lovable** | Prompt-to-UI / full-app scaffolding |
+| **Context7 (MCP)** | Live, version-correct library docs for AI coding |
+| **GitHub + gh CLI** | Version control + ~80% of GitHub from the terminal |
+| **Linear** | Issue tracking built for speed |
+| **Vercel** | Ship and host front-ends + serverless in minutes |
+
+> The thesis from the [business playbook](../business/startup-playbook.md#the-solo-and-ai-founder-playbook-2026): one person + this stack (~$200-500/mo) replaces what used to need a team. But [read every line](../engineering/dev-setup.md#read-every-line-understanding-ai-generated-code) — own what you ship.
+
+### Build & Launch
+| Tool | Purpose |
+|------|---------|
+| **Stripe** | Payments — charge from day one |
+| **Resend / Loops** | Transactional + lifecycle email |
+| **Plausible / PostHog** | Privacy-friendly analytics + product insights |
+| **Carrd / Framer** | Fast landing pages for smoke-test validation |
 
 ### Supplements (Quick Reference)
 
