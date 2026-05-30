@@ -103,10 +103,10 @@ quadrantChart
     title Effort vs Impact Matrix
     x-axis Low Effort --> High Effort
     y-axis Low Impact --> High Impact
-    quadrant-1 DO THIS FIRST
-    quadrant-2 Quick Wins — do immediately
-    quadrant-3 IGNORE — eliminate ruthlessly
-    quadrant-4 Time Traps — schedule or batch
+    quadrant-1 Do this first
+    quadrant-2 Quick wins - do now
+    quadrant-3 Ignore - eliminate
+    quadrant-4 Time traps - avoid
     Deep work projects: [0.8, 0.9]
     Career-defining features: [0.9, 0.85]
     Quick documentation: [0.3, 0.7]
