@@ -1,6 +1,6 @@
 # Peak Self
 
-A personal knowledge base for optimal human performance — focus, fitness, health, career, engineering, mindset, and the things I'm building.
+A personal knowledge base for optimal human performance — focus, fitness, health, career, business, engineering, mindset, and the things I'm building.
 
 ## Structure
 
@@ -15,7 +15,7 @@ peak-self/
 ├── career/             # Career growth, skill acquisition, networking
 │   ├── growth-system.md
 │   └── senior-engineer-roadmap.md
-├── business/           # Startups, validation, pricing, distribution, metrics
+├── business/           # Startups: validation, pricing, GTM, why startups fail, founder journey
 │   └── startup-playbook.md
 ├── engineering/        # Software engineering principles & tooling
 │   ├── principles.md
@@ -44,8 +44,8 @@ This repo is a living system — not a collection of tips. Each section contains
 | 💪 [Fitness](fitness/training-protocol.md) | Polarized training, hypertrophy, Zone 2 + VO2max, sleep, recovery, nutrition |
 | 🧪 [Health](health/supplement-stack.md) | My actual supplement/longevity stack, daily routine, costs, interaction notes |
 | 📈 [Career](career/growth-system.md) | Growth flywheel, leverage, negotiation, decision frameworks, Senior→Staff→Principal roadmap |
-| 💼 [Business](business/startup-playbook.md) | Idea validation, business models, pricing, distribution, metrics, founder journey |
-| 🛠️ [Engineering](engineering/principles.md) | Principles & laws, ADRs/RFCs/postmortems, Claude Code + dev setup, DORA metrics |
+| 💼 [Business](business/startup-playbook.md) | Validation, pricing, GTM, why startups fail, B2B + bootstrapping, solo-AI playbook, my founder journey |
+| 🛠️ [Engineering](engineering/principles.md) | Principles & laws, ADRs/RFCs/postmortems, DORA metrics, Claude Code + dev setup, reading AI-generated code |
 | 🧠 [Mindset](mindset/identity-architecture.md) | Identity-first habits, implementation intentions, Stoic practices, mental models |
 | 🎨 [Hobbies](hobbies/interests.md) | Reading, side projects (arkitekto.review, miming.io), things I'm building |
 | 🔗 [Resources](resources/curated-links.md) | Curated channels, podcasts, books, newsletters, tools, learning roadmaps |
@@ -65,7 +65,7 @@ This repo is a living system — not a collection of tips. Each section contains
 1. Map your [Career Roadmap](career/senior-engineer-roadmap.md) — Senior → Staff → Principal ladder, IC vs management, salary benchmarks
 2. Master the [Engineering Principles](engineering/principles.md) — Laws every senior engineer should know, debugging models, DORA metrics
 3. Level up your [Engineering Practices](engineering/practices.md) — ADRs, RFCs, code review, postmortems, documentation-driven development
-4. Optimize your [Dev Setup](engineering/dev-setup.md) — Claude Code, terminal tools, AI workflows, CI/CD, dotfiles
+4. Optimize your [Dev Setup](engineering/dev-setup.md) — Claude Code, terminal tools, AI workflows, CI/CD, dotfiles, and reading every line of AI-generated code
 
 ## Principles
 
@@ -76,4 +76,6 @@ This repo is a living system — not a collection of tips. Each section contains
 - **Measure what matters** — track the lead indicators, not just outcomes
 - **Start simple, evolve complexity** — Gall's Law: complex systems evolve from simple ones that worked
 - **Write it down** — ADRs, RFCs, docs: writing forces clarity and scales knowledge
-- **AI drafts, engineers decide** — leverage AI for volume, apply judgment for quality
+- **AI drafts, engineers decide** — leverage AI for volume, apply judgment for quality; read every line and own what you ship
+- **Distribution > product** — a worse product with better distribution wins; validate demand before you build
+- **Failure is tuition** — every failed swing should leave a reusable asset (a validated ICP, a channel, an audience)
