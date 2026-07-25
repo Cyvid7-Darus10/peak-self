@@ -1,8 +1,8 @@
-# Career Growth System
+# Career growth system
 
-> Your career is not a ladder. It's a portfolio of bets, skills, and relationships that compound over time.
+> Nobody hands you the next rung. What actually carries between jobs is the skills you built and the people who know your work.
 
-## The Growth Framework
+## The growth framework
 
 ```mermaid
 flowchart LR
@@ -22,9 +22,9 @@ flowchart LR
 
 ---
 
-## Skill Acquisition
+## Skill acquisition
 
-### High-Income Skills (2024-2025)
+### High-income skills (2024-2025)
 
 ```mermaid
 mindmap
@@ -35,14 +35,14 @@ mindmap
       Cybersecurity
         $120K median, recession-resistant
       Cloud Computing
-        AWS, Azure, GCP — $120K-$160K
+        AWS, Azure, GCP at $120K-$160K
       Software Development
         25% BLS growth rate
       Data Science
         $108K median
     Business
       Digital Marketing
-        SEO, paid ads — $700B+ global ad spend
+        SEO, paid ads, $700B+ global ad spend
       Sales & Negotiation
         Directly tied to revenue
       Project Management
@@ -53,11 +53,11 @@ mindmap
       Analytical Thinking
 ```
 
-> **Strategy**: Pick one technical skill (AI/ML or cybersecurity) and pair it with one business skill (sales or marketing). The intersection is where the highest leverage sits.
+Pick one technical skill (AI/ML or cybersecurity) and pair it with one business skill (sales or marketing). Plenty of people have one half. The overlap is where you stop being interchangeable.
 
-### The T-Shape Model
+### The T-shape model
 
-Go deep in 1-2 areas, then broad across adjacent skills.
+Go deep in one or two areas, then broad across the adjacent ones.
 
 ```mermaid
 flowchart TD
@@ -78,7 +78,7 @@ flowchart TD
     style Depth fill:#1a1a2e,stroke:#e94560,color:#eee
 ```
 
-### Deliberate Practice (Not Just Reps)
+### Deliberate practice, not just reps
 
 ```mermaid
 flowchart LR
@@ -90,13 +90,13 @@ flowchart LR
     style E fill:#8e44ad,stroke:#8e44ad,color:#fff
 ```
 
-> 10,000 hours of autopilot = mediocrity. 1,000 hours of deliberate practice = elite.
+> Ten thousand hours on autopilot buys you ten thousand hours of the same mistake. A thousand hours with attention and feedback beats it.
 
 ---
 
-## Leverage: Work on the Right Things
+## Leverage: work on the right things
 
-Not all work compounds equally. Prioritize high-leverage activities.
+Not all work compounds equally, so prioritize the work that does.
 
 ```mermaid
 quadrantChart
@@ -117,7 +117,7 @@ quadrantChart
     Email formatting: [0.15, 0.1]
 ```
 
-### Naval Ravikant's 3 Forms of Leverage
+### Naval Ravikant's three forms of leverage
 
 ```mermaid
 flowchart TD
@@ -128,11 +128,11 @@ flowchart TD
     style L fill:#e94560,stroke:#e94560,color:#fff
 ```
 
-> **Specific knowledge** is found by pursuing your genuine curiosity. If society can train you for it, it can train someone else to replace you. — Naval Ravikant
+> Specific knowledge is found by pursuing your genuine curiosity. If society can train you for it, it can train someone else to replace you. (Naval Ravikant)
 
 ---
 
-## Building in Public
+## Building in public
 
 Visibility compounds. Your best work means nothing if nobody knows about it.
 
@@ -150,59 +150,62 @@ flowchart TD
     style E fill:#e94560,stroke:#e94560,color:#fff
 ```
 
-### What Works in 2025
+### What works in 2025
 
-- **Niche down aggressively** — be the go-to expert for a specific challenge, not a generalist
-- **Purpose over self-promotion** — the market is saturated with personal brands but starving for purpose-driven voices
-- **Consistency beats virality** — 3-5x/week on one platform, value-first approach
-- **Document your process** — share wins AND failures. Building in public builds trust faster than polished outcomes
-- **Mix short-form (reach) with long-form (authority)** — tweets get eyeballs, blog posts/videos build depth
-- **Platform strategy**: LinkedIn for professional thought leadership, X/Twitter for real-time building in public, YouTube/Newsletter for compounding long-form content
+Niche down harder than feels comfortable. Being the person people call about one specific problem beats being generally competent at everything.
 
----
+There are already more personal brands than anyone needs. What's short supply is someone who obviously has a reason for doing it beyond attention.
 
-## Negotiation (Research-Backed)
+Consistency beats virality: three to five posts a week on one platform, and lead with something useful. Share the failures too, not just the wins. Watching someone work through a problem builds more trust than a polished result does.
 
-### The Science
-
-- **Anchoring effect**: Candidates who asked for $100K were offered an average of $35,385 vs $32,463 in the control group. The first number anchors everything — always anchor high
-- **Initiate the conversation**: Studies show candidates who bring up salary first tend to earn more
-- **Collaborating > Compromising**: Compromising and accommodating strategies were NOT linked to salary gains. Problem-solving for mutual benefit yields the best outcomes
-
-### Specific Tactics
-
-1. **Ask 5-15% above your target** — gives room to negotiate while appearing informed
-2. **Use ranges, not single numbers** — frame your ask using market data ranges
-3. **Start early** — begin salary conversations 3-4 months before you need an answer
-4. **Negotiate the total package** — if salary is capped, negotiate signing bonus, equity, remote flexibility, PTO, title, professional development budget
-5. **Never accept the first offer** — it's almost always the floor, not the ceiling
+Short-form buys reach, long-form builds authority, so run both. In practice that means LinkedIn for professional writing, X for real-time building in public, and YouTube or a newsletter for the long-form work that keeps paying out.
 
 ---
 
-## Cold Outreach & Networking (2025)
+## Negotiation (research-backed)
 
-### What Works
+### The science
 
-- **Personalized first lines** increase response rates by 2-3x
-- **Value-first approach** (mini audits, templates, data) receives 2.5x more responses than direct selling
-- **Multi-channel**: LinkedIn → email → call. 3+ channels yields ~19% engagement rate
-- **LinkedIn cold messages**: 7-15% reply rates (2x typical cold email). Highly personalized sequences push past 25%
-- **Best day**: Tuesday (24.9% engagement), then Monday. 62.5% of opens between 9 AM - 3 PM
+Anchoring is real. Candidates who asked for $100K were offered an average of $35,385, against $32,463 in the control group. The first number sets the frame, so make sure it's yours.
 
-### For Genuine Networking (Not Sales)
+Bring it up first. Studies show candidates who raise salary before the employer does tend to earn more.
 
-1. Comment meaningfully on someone's content for 2-3 weeks before DMing
-2. Offer something specific: an introduction, a resource, or genuine feedback on their work
-3. Keep initial messages under 3 sentences
-4. **Give first**: Help people with no expectation of return
-5. **Weak ties matter**: Your next opportunity comes from acquaintances, not close friends (Granovetter's research)
-6. **Curate your circle**: You are the average of the 5 people you spend the most time with
+Collaborating beats compromising. Compromising and accommodating strategies were not linked to salary gains at all. Problem-solving for mutual benefit was.
+
+### Specific tactics
+
+1. Ask 5-15% above your target. It leaves room to move and still reads as informed.
+2. Use ranges rather than a single number, framed with market data.
+3. Start early. Begin salary conversations three to four months before you need an answer.
+4. Negotiate the whole package. If salary is capped, go after signing bonus, equity, remote flexibility, PTO, title, or professional development budget.
+5. Never take the first offer. It's the floor.
 
 ---
 
-## Decision-Making Frameworks
+## Cold outreach and networking (2025)
 
-### Bezos: Two-Way Doors
+### What works
+
+Personalized first lines lift response rates by 2-3x. Leading with value (a mini audit, a template, some data) gets 2.5x more responses than selling directly.
+
+Use more than one channel. LinkedIn, then email, then a call. Three or more channels yields roughly 19% engagement. LinkedIn cold messages get 7-15% reply rates, about double typical cold email, and highly personalized sequences push past 25%.
+
+Tuesday is the best day at 24.9% engagement, with Monday behind it. 62.5% of opens happen between 9 AM and 3 PM.
+
+### For genuine networking, not sales
+
+1. Comment meaningfully on someone's work for two or three weeks before you DM them.
+2. Offer something specific: an introduction, a resource, real feedback on what they made.
+3. Keep the first message under three sentences.
+4. Give first, without expecting anything back.
+5. Weak ties matter. Your next opportunity comes from acquaintances rather than close friends (Granovetter).
+6. Curate your circle. You're the average of the five people you spend the most time with.
+
+---
+
+## Decision-making frameworks
+
+### Bezos: two-way doors
 
 ```mermaid
 flowchart TD
@@ -214,9 +217,9 @@ flowchart TD
     style T2 fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> **Most decisions are Type 2**, but people treat them like Type 1 — causing slow execution and missed opportunities.
+> Most decisions are Type 2 and get treated like Type 1. That's where the slow execution comes from.
 
-### Other Frameworks
+### Other frameworks
 
 | Framework | When to Use | How |
 |---|---|---|
@@ -228,35 +231,31 @@ flowchart TD
 
 ---
 
-## Mental Models from Top Performers
+## Mental models from top performers
 
-### Charlie Munger — Latticework
+### Charlie Munger: latticework
 
 > "80 or 90 important models will carry about 90% of the freight in making you a worldly-wise person."
 
-Draw from multiple disciplines (psychology, economics, physics, biology) rather than thinking within a single domain.
+Draw from psychology, economics, physics and biology rather than thinking inside one domain.
 
-- **Inversion**: What would guarantee failure? Avoid those things
-- **Second-Order Thinking**: "And then what?"
-- **Circle of Competence**: Know what you know — and more importantly, what you don't
+Inversion: what would guarantee failure? Avoid that. Second-order thinking: and then what? Circle of competence: know what you know, and more importantly what you don't.
 
-### Elon Musk — First Principles
+### Elon Musk: first principles
 
-Break problems to fundamental truths and reason up. At SpaceX: instead of accepting rockets cost $65M, asked "What are rockets made of?" Raw materials were ~2% of industry price → built rockets in-house at a fraction of cost.
+Break the problem down to fundamental truths and reason up from there. At SpaceX, instead of accepting that rockets cost $65M, he asked what rockets are made of. Raw materials came to roughly 2% of the industry price, so they built rockets in-house at a fraction of the cost.
 
-### Naval Ravikant — Compound Interest Applies to Everything
+### Naval Ravikant: compound interest applies to everything
 
-> "Compound interest applies to relationships, learning, and reputation — not just money."
+> "Compound interest applies to relationships, learning, and reputation, not just money."
 
-- Seek **wealth** (assets that earn while you sleep), not money or status
-- Status is zero-sum; wealth creation is positive-sum
-- Specific knowledge + leverage + accountability = wealth
+Seek wealth, meaning assets that earn while you sleep, rather than money or status. Status is zero-sum. Wealth creation isn't. Specific knowledge plus leverage plus accountability is the whole equation.
 
 ---
 
-## Career Decision Framework
+## Career decision framework
 
-When evaluating opportunities, rate each 1-10:
+When evaluating an opportunity, rate each of these 1-10:
 
 ```mermaid
 mindmap
@@ -283,24 +282,24 @@ mindmap
 
 ---
 
-## Weekly Career Review (30 min, Sunday)
+## Weekly career review (30 min, Sunday)
 
 - What did I learn this week?
 - What high-leverage work did I do?
-- What low-value work should I eliminate?
+- What low-value work should I cut?
 - Who did I help? Who helped me?
-- What's my #1 priority next week?
+- What's my number one priority next week?
 
 ## References
 
-- Cal Newport — *So Good They Can't Ignore You*
-- Naval Ravikant — *The Almanack of Naval Ravikant*
-- Paul Graham — Essays (paulgraham.com)
-- Charlie Munger — *Poor Charlie's Almanack*
-- James Clear — Mental models (jamesclear.com/mental-models)
-- Patrick McKenzie (patio11) — Career advice essays
-- Sahil Bloom — Career growth frameworks (newsletter)
-- Harvard PON — Salary negotiation research
-- University of Idaho — Anchoring effect study
-- Granovetter — "The Strength of Weak Ties"
-- Coursera, IMD, Nexford — 2025 high-income skills data
+- Cal Newport, *So Good They Can't Ignore You*
+- Naval Ravikant, *The Almanack of Naval Ravikant*
+- Paul Graham, essays (paulgraham.com)
+- Charlie Munger, *Poor Charlie's Almanack*
+- James Clear, mental models (jamesclear.com/mental-models)
+- Patrick McKenzie (patio11), career advice essays
+- Sahil Bloom, career growth frameworks (newsletter)
+- Harvard PON, salary negotiation research
+- University of Idaho, anchoring effect study
+- Granovetter, "The Strength of Weak Ties"
+- Coursera, IMD, Nexford, 2025 high-income skills data

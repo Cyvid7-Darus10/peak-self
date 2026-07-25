@@ -1,10 +1,10 @@
-# Developer Setup & AI Workflows
+# Developer setup and AI workflows
 
-> The best engineers in 2026 are exceptional reviewers — AI produces volume, humans ensure quality.
+> AI produces volume. The scarce skill is reviewing it well.
 
-## Claude Code Setup
+## Claude Code setup
 
-### CLAUDE.md Hierarchy
+### CLAUDE.md hierarchy
 
 ```mermaid
 flowchart TD
@@ -17,14 +17,9 @@ flowchart TD
     style D fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-**Best practices:**
-- Target under 200 lines per file — longer reduces adherence
-- Use `@path/to/import` to import additional files (up to 5 hops)
-- Run `/init` to auto-generate from your codebase
-- Use `.claude/rules/` for modular, topic-specific instructions
-- Path-scoped rules only load when Claude works with matching files
+Keep each file under about 200 lines, since adherence drops as they get longer. Use `@path/to/import` to pull in other files, up to five hops. Run `/init` to generate a first draft from the codebase. Put topic-specific instructions in `.claude/rules/`, where path-scoped rules only load when Claude touches matching files.
 
-### Keyboard Shortcuts
+### Keyboard shortcuts
 
 | Shortcut | Function |
 |----------|----------|
@@ -37,7 +32,7 @@ flowchart TD
 | `Shift+Tab` | Auto-accept mode |
 | `Shift+Tab+Tab` | Plan mode |
 
-### Custom Commands
+### Custom commands
 
 ```bash
 # Create parameterized commands
@@ -48,11 +43,12 @@ echo 'Review the PR at $ARGUMENTS for security issues' > .claude/commands/securi
 # Usage: /security-review https://github.com/org/repo/pull/42
 ```
 
-### Hooks (Guaranteed Execution)
+### Hooks
 
-Unlike prompt instructions, hooks run deterministically.
+Prompt instructions are a request. Hooks actually run.
 
-**Auto-format on file write:**
+Auto-format on file write:
+
 ```json
 {
   "hooks": {
@@ -67,7 +63,8 @@ Unlike prompt instructions, hooks run deterministically.
 }
 ```
 
-**Block dangerous commands:**
+Block dangerous commands:
+
 ```json
 {
   "hooks": {
@@ -82,24 +79,24 @@ Unlike prompt instructions, hooks run deterministically.
 }
 ```
 
-Exit code 0 = allow, exit code 2 = block.
+Exit code 0 allows, exit code 2 blocks.
 
-### MCP Servers
+### MCP servers
 
 ```bash
 # Essential trio (covers 90% of dev needs)
 claude mcp add github -- npx -y @github/github-mcp-server      # GitHub's official server
 claude mcp add playwright -- npx -y @playwright/mcp            # Microsoft-maintained
-claude mcp add context7 -- npx -y @upstash/context7-mcp        # Upstash — live library docs
+claude mcp add context7 -- npx -y @upstash/context7-mcp        # Upstash, live library docs
 
 # Additional useful servers
 claude mcp add brave-search -e BRAVE_API_KEY=xxx -- npx -y @brave/brave-search-mcp-server
 claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres   # community server
 ```
 
-> Package names drift fast — always confirm against the [MCP servers registry](https://github.com/modelcontextprotocol/servers) before installing. The older `@modelcontextprotocol/server-github` and `server-postgres` packages are now archived in favor of the maintained ones above.
+> Package names drift fast, so check the [MCP servers registry](https://github.com/modelcontextprotocol/servers) before installing. The older `@modelcontextprotocol/server-github` and `server-postgres` packages are archived now in favor of the maintained ones above.
 
-### Permissions (Lock Down)
+### Permissions
 
 ```json
 {
@@ -110,25 +107,25 @@ claude mcp add postgres -- npx -y @modelcontextprotocol/server-postgres   # comm
 }
 ```
 
-### Efficiency Tips
+### Efficiency tips
 
-- Start separate sessions for different tasks (avoids context bloat)
-- Use `claude --continue` or `claude --resume` to continue work
-- Use `!npm test` to run shell commands with fewer tokens
-- Set `MAX_THINKING_TOKENS=10000` for thinking budget
-- Use git worktrees for parallel development
+- Run separate sessions for separate tasks so context doesn't bloat
+- `claude --continue` or `claude --resume` to pick up where you left off
+- `!npm test` runs shell commands with fewer tokens than asking for it
+- `MAX_THINKING_TOKENS=10000` sets the thinking budget
+- Git worktrees for parallel development
 
 ---
 
-## AI-Assisted Development Workflow
+## AI-assisted development workflow
 
-### The Senior Engineer's AI Workflow (Addy Osmani)
+### Addy Osmani's workflow
 
 ```mermaid
 flowchart TD
     A["1. Plan before code<br/>Brainstorm spec WITH the AI<br/>Create spec.md with requirements"] --> B["2. Break into small chunks<br/>Feed manageable pieces<br/>one at a time"]
     B --> C["3. Provide full context<br/>All relevant code, docs,<br/>constraints upfront"]
-    C --> D["4. Choose right model<br/>per task — try multiple<br/>when one hits limits"]
+    C --> D["4. Choose right model<br/>per task, try multiple<br/>when one hits limits"]
     D --> E["5. Test continuously<br/>Write tests for each step<br/>Debug iteratively"]
     E --> F["6. Commit granularly<br/>Ultra-granular version control<br/>Commits as save points"]
     F --> G["7. Review everything<br/>Never blindly trust AI output<br/>Spawn secondary sessions to critique"]
@@ -138,69 +135,69 @@ flowchart TD
     style G fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> **AI drafts, engineers decide.** 84% of developers now use or plan to use AI tools (Stack Overflow 2025 Developer Survey, up from 76% in 2024), with roughly half using them daily.
+> AI drafts, engineers decide. 84% of developers now use or plan to use AI tools (Stack Overflow 2025 Developer Survey, up from 76% in 2024), with roughly half using them daily.
 
-### Key Principles
+### Key principles
 
-- **Spec first**: Write a detailed spec WITH the AI before any code
-- **Context is king**: Supply all relevant code, docs, and constraints
-- **Model "musical chairs"**: Different models excel at different tasks
-- **Multi-agent**: One agent writes, another critiques, another tests
-- **Trust but verify**: AI produces volume; you ensure quality
+Write the spec with the AI before any code exists. Give it everything relevant upfront: code, docs, constraints. Switch models when one stalls, since they're good at different things. Use more than one agent, so something writes while something else critiques and tests. Then review all of it, because the volume is free and the judgment isn't.
 
 ---
 
-## Read Every Line: Understanding AI-Generated Code
+## Read every line
 
-> **Recent hard-won lesson:** the moment you stop reading the code line by line, you stop being the engineer and become a passenger. AI writes the code, but **you own it** — in code review, in production at 3 AM, and in your own understanding of the system.
+> The moment you stop reading the code line by line, you stop being the engineer and become a passenger. AI writes the code, but you own it: in review, in production at 3 AM, and in whether you actually understand your own system.
 
-Accepting code you don't fully understand feels fast. It isn't. You're not saving time — you're **borrowing it at high interest**, and the debt comes due during the worst possible debugging session.
+Accepting code you don't understand feels fast. It isn't. You're borrowing time at a high rate, and the debt comes due in the worst possible debugging session.
 
 ```mermaid
 flowchart TD
     A["AI generates code"] --> B{"Do I understand<br/>every line?"}
-    B -->|"No — just accept it"| C["Looks fine, ship it"]
+    B -->|"No, just accept it"| C["Looks fine, ship it"]
     C --> D["Hidden bug / wrong abstraction /<br/>subtle security hole<br/>silently enters the codebase"]
     D --> E["Breaks in production<br/>I can't debug what<br/>I never understood"]
-    B -->|"Yes — read & verify"| F["Catch the bug now,<br/>learn the pattern,<br/>own the system"]
+    B -->|"Yes, read & verify"| F["Catch the bug now,<br/>learn the pattern,<br/>own the system"]
     style C fill:#7b241c,stroke:#7b241c,color:#fff
     style D fill:#c0392b,stroke:#c0392b,color:#fff
     style E fill:#c0392b,stroke:#c0392b,color:#fff
     style F fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-### Why this matters more, not less, in the AI era
+### Why this matters more, not less, now
 
-- **AI is a confident bullshitter.** It produces plausible-looking code that compiles and *usually* works — which is exactly what makes its mistakes dangerous. The errors aren't obvious syntax breaks; they're subtle: an off-by-one, a wrong default, a swallowed error, an N+1 query, a race condition, a hallucinated API that happens to exist but does something else.
-- **Volume hides defects.** AI raises PR size by ~150%. More code reviewed less carefully = more bugs slipping through. The bottleneck has shifted from *writing* to *verifying* — so verification is now the senior skill (Addy Osmani: the senior engineer's job is "ensuring the right code gets written").
-- **You can't review what you don't understand.** "LGTM" on code you skimmed is theater. If you can't explain *why* each line is there, you haven't reviewed it — you've rubber-stamped it.
-- **Security & correctness don't degrade gracefully.** A hallucinated package name (slopsquatting), a missing input validation, or an unsafe default won't announce itself. It sits quietly until it's exploited.
-- **Skill atrophy is real.** Every line you accept without understanding is a rep you didn't do. Over months, "vibe coding" erodes the exact judgment that makes you valuable — and that you need to catch the AI's mistakes in the first place.
+AI is a confident bullshitter. It produces plausible code that compiles and usually works, which is exactly what makes the failures dangerous. They aren't syntax errors you'd catch instantly. They're an off-by-one, a wrong default, a swallowed error, an N+1 query, a race condition, or a hallucinated API that happens to exist and does something else.
 
-### The discipline: how to actually do it
+Volume hides defects. AI raises PR size by around 150%, and more code reviewed less carefully means more bugs getting through. The bottleneck moved from writing to verifying, which makes verification the senior skill. Addy Osmani's framing is that the job is now ensuring the right code gets written.
 
-1. **Read it like a code review you're accountable for** — because you are. Walk every line and ask: *What does this do? Why is it here? What happens at the edges (null, empty, huge, concurrent)?*
-2. **If you don't understand a line, stop.** Ask the AI to explain it, look it up, or rewrite it into something you *do* understand. Never let an unexplained line survive.
-3. **Trace the data and the failure paths**, not just the happy path. Where does input come from? What's unvalidated? What error is being swallowed?
-4. **Verify the externals exist and behave as claimed** — APIs, library functions, package names, flags. AI hallucinates these confidently.
-5. **Small batches.** Generate and review in chunks you can fully hold in your head, not 800-line dumps. Commit granularly so each save point is understood.
-6. **Make the AI justify itself.** "Why this approach over X?" "What are the edge cases?" "What did you assume?" A second AI session reviewing the first one's output catches a surprising amount.
-7. **Run it and prove it** — tests, not vibes. If you can't write a test for it, you don't understand it well enough.
+You can't review what you don't understand. "LGTM" on code you skimmed is theater. If you can't say why each line is there, you rubber-stamped it.
 
-> **The rule:** if it's in your commit, you can explain every line of it. AI drafts; you read, understand, and decide. The keystrokes got cheaper — the *understanding* is the job.
+Security and correctness don't degrade gracefully either. A hallucinated package name (slopsquatting), a missing validation, an unsafe default: none of them announce themselves. They sit quietly until someone finds them.
+
+And skill atrophy is real. Every line you accept without understanding is a rep you skipped. Over months, vibe coding erodes the exact judgment you need to catch the AI's mistakes in the first place.
+
+### How to actually do it
+
+1. Read it like a review you're accountable for, because you are. Every line: what does this do, why is it here, what happens at the edges (null, empty, huge, concurrent)?
+2. If you don't understand a line, stop. Ask for an explanation, look it up, or rewrite it into something you do understand. Never let an unexplained line survive.
+3. Trace the data and the failure paths, not just the happy path. Where does input come from? What's unvalidated? What error is being swallowed?
+4. Verify the externals exist and behave as claimed: APIs, library functions, package names, flags. This is where hallucinations hide.
+5. Work in small batches. Generate and review chunks you can hold in your head, not 800-line dumps, and commit granularly so each save point is understood.
+6. Make the AI justify itself. Why this approach over X? What are the edge cases? What did you assume? A second session reviewing the first one's output catches a surprising amount.
+7. Prove it with tests rather than vibes. If you can't write a test for it, you don't understand it well enough yet.
+
+> The rule: if it's in your commit, you can explain every line of it. The keystrokes got cheap. The understanding is the job.
 
 ---
 
-## Terminal & CLI Setup
+## Terminal and CLI setup
 
-### The Stack
+### The stack
 
 ```bash
 # Install everything
 brew install ghostty starship zoxide fzf ripgrep bat eza git-delta lazygit gh jq httpie tmux chezmoi
 ```
 
-### Tool Replacements
+### Tool replacements
 
 | Tool | Replaces | Why |
 |------|----------|-----|
@@ -216,7 +213,7 @@ brew install ghostty starship zoxide fzf ripgrep bat eza git-delta lazygit gh jq
 | **gh** | Browser GitHub | Covers ~80% of github.com operations |
 | **httpie** | `curl` | Human-friendly HTTP client |
 
-### Shell Config (~/.zshrc essentials)
+### Shell config (~/.zshrc essentials)
 
 ```bash
 # Starship prompt
@@ -238,9 +235,9 @@ alias ...="cd ../.."
 
 ---
 
-## Dotfiles Management
+## Dotfiles management
 
-### Chezmoi (Recommended)
+### Chezmoi
 
 ```bash
 chezmoi init
@@ -250,9 +247,9 @@ chezmoi apply  # deploy changes
 chezmoi update  # pull from remote + apply
 ```
 
-**Why Chezmoi**: Templates adapt one set of dotfiles to different machines. Store secrets safely. Cross-platform support.
+Templates let one set of dotfiles adapt to different machines, secrets stay out of the repo, and it works across platforms.
 
-### What to Version Control
+### What to version control
 
 ```
 ~/.config/
@@ -271,16 +268,13 @@ chezmoi update  # pull from remote + apply
 
 ---
 
-## Git Workflow
+## Git workflow
 
-### Trunk-Based Development
+### Trunk-based development
 
-Used by Google, Meta, and most high-velocity teams:
-- Everyone commits to main frequently (at least daily)
-- Short-lived feature branches (hours to days, not weeks)
-- Feature flags for incomplete work
+What Google, Meta and most high-velocity teams do: everyone commits to main at least daily, feature branches live hours or days rather than weeks, and feature flags hide the incomplete work.
 
-### Conventional Commits
+### Conventional commits
 
 ```
 <type>: <description>
@@ -288,22 +282,21 @@ Used by Google, Meta, and most high-velocity teams:
 Types: feat, fix, refactor, docs, test, chore, perf, ci
 ```
 
-Imperative mood: "Add login" not "Added login". Body explains the **why**, not the what.
+Imperative mood: "Add login", not "Added login". The body explains why, since the diff already covers what.
 
-### Lazygit Power Moves
+### Lazygit power moves
 
-- **Interactive rebase**: Visual squash, fixup, drop, reorder with keypresses
-- **Fixup commits**: `git commit --fixup <hash>` then `git rebase -i --autosquash`
-- **Cherry-pick across branches**: Navigate to commit, press `C`, switch branch, press `V`
-- **Conflict resolution**: Built-in merge tool with automatic continue after resolving
+- Interactive rebase: squash, fixup, drop and reorder visually with single keypresses
+- Fixup commits: `git commit --fixup <hash>` then `git rebase -i --autosquash`
+- Cherry-pick across branches: navigate to the commit, press `C`, switch branch, press `V`
+- Conflict resolution: built-in merge tool that continues automatically once you're done
 
 ---
 
-## CI/CD Optimization (GitHub Actions)
+## CI/CD optimization (GitHub Actions)
 
-### High-Impact Strategies
+Dependency caching, which typically cuts 60-80% off the run:
 
-**1. Dependency caching (60-80% time reduction):**
 ```yaml
 - uses: actions/setup-node@v4
   with:
@@ -311,7 +304,8 @@ Imperative mood: "Add login" not "Added login". Body explains the **why**, not t
     cache: 'pnpm'
 ```
 
-**2. Parallel jobs:**
+Parallel jobs:
+
 ```yaml
 jobs:
   lint:
@@ -322,21 +316,24 @@ jobs:
     needs: [lint, test]  # runs after both pass
 ```
 
-**3. Path filters:**
+Path filters:
+
 ```yaml
 on:
   push:
     paths-ignore: ['*.md', 'docs/**']
 ```
 
-**4. Shallow checkout:**
+Shallow checkout:
+
 ```yaml
 - uses: actions/checkout@v4
   with:
     fetch-depth: 1
 ```
 
-**5. Docker layer caching:**
+Docker layer caching:
+
 ```yaml
 - uses: docker/build-push-action@v5
   with:
@@ -344,11 +341,11 @@ on:
     cache-to: type=gha,mode=max
 ```
 
-> Real-world result: A Next.js monorepo went from 14 min to 1 min 45 sec (87% reduction).
+> One Next.js monorepo went from 14 minutes to 1 minute 45 seconds doing this, an 87% reduction.
 
 ---
 
-## Monorepo Tooling
+## Monorepo tooling
 
 | Tool | When | Complexity |
 |------|------|------------|
@@ -356,7 +353,7 @@ on:
 | **Turborepo** | Startups/mid-size, fast caching | Medium |
 | **Nx** | 5+ teams, enforced boundaries, distributed CI | High |
 
-**Start with**: pnpm workspaces + Turborepo. Migrate to Nx only when you need enforced architectural boundaries.
+Start with pnpm workspaces plus Turborepo. Move to Nx only when you actually need enforced architectural boundaries.
 
 ```
 monorepo/
@@ -368,20 +365,17 @@ monorepo/
 
 ---
 
-## tmux Workflows
+## tmux workflows
 
-### IDE-Like Layout
+### IDE-like layout
 
-- Left pane (80%): Editor
-- Right pane (20%): Terminal/test runner
+Left pane at 80% for the editor, right pane at 20% for the terminal or test runner.
 
-### Multi-Project Workflow
+### Multi-project workflow
 
-- One session per project (`backend`, `frontend`, `infra`)
-- Switch instantly with `Ctrl+b s`
-- **Sessionizer pattern**: fzf + tmux script for instant project switching
+One session per project (`backend`, `frontend`, `infra`), switched instantly with `Ctrl+b s`. The sessionizer pattern, an fzf plus tmux script, makes project switching near-instant.
 
-### Essential Keybindings
+### Essential keybindings
 
 | Key | Action |
 |-----|--------|
@@ -396,9 +390,9 @@ monorepo/
 
 ## Observability
 
-### Structured Logging
+### Structured logging
 
-Always use JSON-formatted logs with defined fields — not plain text.
+Log JSON with defined fields, not plain text.
 
 ```json
 {
@@ -412,7 +406,7 @@ Always use JSON-formatted logs with defined fields — not plain text.
 }
 ```
 
-### Tool Stack
+### Tool stack
 
 | Layer | Tool |
 |-------|------|
@@ -422,13 +416,13 @@ Always use JSON-formatted logs with defined fields — not plain text.
 | Tracing | OpenTelemetry |
 | APM | Datadog / Elastic |
 
-> **Rule**: Every async boundary, every external call, every step entry/exit should have a log line. When something hangs, the last log line tells you where it stopped.
+> Log every async boundary, every external call, and every step entry and exit. When something hangs at 3am, the last log line is the whole investigation.
 
 ## References
 
-- [Addy Osmani — AI Coding Workflow](https://addyosmani.com/blog/ai-coding-workflow/)
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Addy Osmani, AI coding workflow](https://addyosmani.com/blog/ai-coding-workflow/)
+- [Claude Code documentation](https://docs.anthropic.com/en/docs/claude-code)
 - [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
-- [MCP Servers Repository](https://github.com/modelcontextprotocol/servers)
-- [Chezmoi — Why Use Chezmoi](https://www.chezmoi.io/why-use-chezmoi/)
-- [Bret Fisher — Sweet Shell 2026](https://www.bretfisher.com/blog/shell)
+- [MCP servers repository](https://github.com/modelcontextprotocol/servers)
+- [Chezmoi, why use chezmoi](https://www.chezmoi.io/why-use-chezmoi/)
+- [Bret Fisher, Sweet Shell 2026](https://www.bretfisher.com/blog/shell)

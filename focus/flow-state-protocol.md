@@ -1,22 +1,22 @@
-# Flow State Protocol
+# Flow state protocol
 
-> Your brain functions in power-saving mode by default. It conserves energy, pushes you to procrastinate, and stops you from doing creative work. But you can train yourself to enter a flow state of deep focus at will.
+> Your brain runs in power-saving mode by default. It conserves energy, nudges you toward procrastination, and gets in the way of creative work. The useful part is that you can train yourself into deep focus on demand.
 
-## The Protocol
+## The protocol
 
-### Phase 1: Environment Design
+### Phase 1: environment design
 
-**Elimination before optimization.** Don't add tools — remove friction.
+Remove friction before you add tools.
 
-- Phone in another room (not flipped over, not on silent — GONE)
-- Close all browser tabs unrelated to the task
-- Notifications off on all devices — every notification takes ~23 minutes to fully recover from (UC Irvine research)
-- Clean workspace — visual clutter = mental clutter
-- One monitor if possible (reduces context-switching temptation)
-- Same location, same time daily (environment becomes the trigger)
-- **Lighting**: ~350 lux, cooler color temp (~5000K) for analytical work, warmer (~3000K) for creative work
-- **Temperature**: 23-25°C (73-77°F) optimal for cognition. Above 26°C significantly increases fatigue and errors
-- **Noise**: ~45 dB for analytical focus (quiet library). ~70 dB ambient (coffee shop) boosts creativity but impairs analytical work
+- Phone in another room. Not flipped over, not on silent. Gone.
+- Close every browser tab unrelated to the task.
+- Notifications off on all devices. Each one costs about 23 minutes of recovery time (UC Irvine research).
+- Clean workspace. Visual clutter turns into mental clutter.
+- One monitor if you can manage it, since two invites context switching.
+- Same place, same time each day, so the environment itself becomes the trigger.
+- Lighting: around 350 lux, cooler color temperature (~5000K) for analytical work, warmer (~3000K) for creative work.
+- Temperature: 23-25°C (73-77°F) is best for cognition. Above 26°C, fatigue and errors climb noticeably.
+- Noise: around 45 dB for analytical focus, roughly a quiet library. Around 70 dB of coffee-shop ambience helps creativity but hurts analytical work.
 
 ```mermaid
 flowchart TB
@@ -33,21 +33,21 @@ flowchart TB
     style checklist fill:#1a1a2e,stroke:#e94560,color:#eee
 ```
 
-### Phase 2: Pre-Work Ritual (5-10 minutes)
+### Phase 2: pre-work ritual (5-10 minutes)
 
-The minutes before work define the quality of the session. Pick what works for you:
+The minutes before you start decide how good the session is. Pick whichever of these works for you:
 
-- **Box breathing**: 4 seconds in, 4 hold, 4 out, 4 hold (3-5 rounds)
-- **Journaling**: Write down the ONE thing you will accomplish this session — try [Isip](https://isip.pastelero.ph), a todo + journal app I built for exactly this
-- **Visualization**: See yourself completing the work, then start
-- **Intention statement**: "For the next 90 minutes, I am working on X. Nothing else exists."
-- **NSDR (Non-Sleep Deep Rest)**: A 10-minute body-scan + long-exhale breathing protocol. A daily 13-minute practice improved attention, working memory, and recognition memory while reducing anxiety. 1-hour yoga nidra increased baseline dopamine by 65% (Huberman Lab)
+- Box breathing: 4 seconds in, 4 hold, 4 out, 4 hold, for three to five rounds.
+- Journaling: write down the one thing you'll finish this session. I built [Isip](https://isip.pastelero.ph), a todo and journal app, for exactly this.
+- Visualization: watch yourself finish the work, then begin.
+- Intention statement: "For the next 90 minutes I am working on X. Nothing else exists."
+- NSDR (non-sleep deep rest): a 10-minute body scan with long exhales. A daily 13-minute practice improved attention, working memory and recognition memory while reducing anxiety, and an hour of yoga nidra raised baseline dopamine by 65% (Huberman Lab).
 
-The purpose is **clarity of intention** — making your target obvious and singular.
+What you're after is one obvious target and nothing competing with it.
 
-### Phase 3: Single Focus Execution
+### Phase 3: single focus execution
 
-Pick ONE task. Not two. Not a task list. One clear target.
+Pick one task. Not two, and not a list.
 
 ```mermaid
 flowchart TD
@@ -62,18 +62,11 @@ flowchart TD
     style E fill:#16213e,stroke:#0f3460,color:#eee
 ```
 
-### Phase 4: The Resistance Threshold (15-25 minutes)
+### Phase 4: the resistance threshold (15-25 minutes)
 
-This is where most people fail. ~15-25 minutes in, you'll feel the itch:
+Somewhere around 15 to 25 minutes in, the itch shows up: check your phone, open social media, "quickly" check email, get a snack you don't want. This is the point where most sessions die.
 
-- Check your phone
-- Open social media
-- "Quickly" check email
-- Get a snack you don't need
-
-**This is the critical moment.** Giving in here is the worst thing you can do.
-
-Steven Kotler's flow research confirms: the first 20-30 minutes of frustration/difficulty is a **required neurochemical precursor** to flow. The brain is loading information and shifting from beta to alpha/theta waves. This "struggle phase" is not failure — it's the entry fee.
+Steven Kotler's flow research says the first 20-30 minutes of frustration is a required neurochemical precursor to flow. The brain is loading information and shifting from beta into alpha and theta waves. The struggle phase isn't a sign you're failing at this, it's the part everyone has to sit through.
 
 ```mermaid
 xychart-beta
@@ -83,24 +76,22 @@ xychart-beta
     line [0, 40, 70, 85, 92, 96, 100]
 ```
 
-> **THE WALL hits at 15-25 min.** Most people quit here. Push through it — each time you do, the neural pathways for deep focus physically strengthen.
+> The wall hits at 15-25 min. Push through it and the neural pathways for deep focus physically strengthen.
 
-**What to do:**
-1. Notice the urge — don't fight it, acknowledge it: "There's the itch."
-2. Set a **distraction stopwatch** — time how long you can resist
-3. Breathe through it — the urge passes in 60-90 seconds
-4. Return to the task
+What to do when it hits:
 
-Each time you cross this threshold, the neural pathways for deep focus physically strengthen. It is literally a training process — like building muscle.
+1. Notice the urge and name it rather than fighting it: "there's the itch."
+2. Start a distraction stopwatch and see how long you can hold out.
+3. Breathe through it. The urge passes in 60 to 90 seconds.
+4. Go back to the task.
 
-### Phase 5: Real Breaks
+Every time you cross that threshold you're training a capacity, in the same sense that you'd train a muscle.
 
-After 60-90 minutes of deep work:
+### Phase 5: real breaks
 
-- **DO**: Walk around, look out the window, stretch, drink water, stare at nothing
-- **DON'T**: Check phone, scroll social media, watch videos, read news
+After 60 to 90 minutes of deep work: walk around, look out the window, stretch, drink water, stare at nothing. Don't check your phone, scroll, watch videos, or read news.
 
-The break must let your brain idle — not switch to another stimulation source.
+The break works by letting your brain idle. Swapping one stimulation source for another doesn't count.
 
 ```mermaid
 flowchart LR
@@ -120,23 +111,23 @@ flowchart LR
     style WORST fill:#7b241c,stroke:#7b241c,color:#fff
 ```
 
-> **Rule: If it has a screen, it's not a break.**
+> Rule: if it has a screen, it isn't a break.
 
 ---
 
-## Ultradian Rhythms: The 90-Minute Rule
+## Ultradian rhythms: the 90-minute rule
 
-Your brain operates in ~90-minute ultradian cycles of higher and lower alertness (the same cycles that govern sleep stages at night, first described by sleep researcher Nathaniel Kleitman). Aligning focused work to these cycles — pushing hard while alertness is high, then resting at the trough — works *with* your biology instead of against it.
+Your brain runs on roughly 90-minute ultradian cycles of higher and lower alertness, the same cycles that govern sleep stages at night. Sleep researcher Nathaniel Kleitman described them first. Working with the cycle, pushing while alertness is high and resting at the trough, means you're not fighting your own biology for the whole session.
 
-After 90 minutes, forcing more deep work yields diminishing returns. The break is not optional — it's when the brain consolidates what was processed.
+Past 90 minutes, pushing for more deep work gives you less and less. The break is where the brain consolidates what it just processed.
 
-**DeskTime research** on the most productive 10% of users found they worked **52 minutes**, then broke for **17 minutes** on average (from DeskTime's original 2014 analysis; a later look put it closer to 112/26 — the principle, not the exact ratio, is what matters).
+DeskTime's research on their most productive 10% of users found they worked 52 minutes and broke for 17, on average. That was the original 2014 analysis, and a later look put it closer to 112/26, so take the principle rather than the exact ratio.
 
 ---
 
-## Caffeine Timing Science
+## Caffeine timing
 
-Applies to all caffeine sources: tea, matcha, energy drinks, pre-workout, soda — not just coffee.
+This applies to any caffeine source: tea, matcha, energy drinks, pre-workout, soda.
 
 ```mermaid
 gantt
@@ -153,32 +144,32 @@ gantt
         No caffeine zone     :crit, 13:00, 600m
 ```
 
-- **Wait 90 minutes after waking** before your first caffeine. Cortisol peaks 30-45 min after waking and naturally promotes alertness. Caffeine during this peak wastes the effect and blunts your cortisol response over time
-- **Caffeine doesn't create energy** — it blocks adenosine receptors, masking fatigue. Consuming it immediately means adenosine is still there and hits you later as the "afternoon crash"
-- **Half-life: 5-6 hours.** Caffeine at 2pm means half is still active at 7-8pm
-- **Evening caffeine delays melatonin by ~40 minutes** (Science Translational Medicine)
-- **Conservative cutoff**: No caffeine within 10 hours of bedtime
-- **If you skip caffeine entirely** — you already have an advantage. Your natural cortisol/adenosine cycle runs unmasked, meaning more stable energy throughout the day and better sleep quality by default
+- Wait 90 minutes after waking before the first one. Cortisol peaks 30-45 minutes after waking and already makes you alert. Caffeine on top of that peak wastes the effect and blunts your cortisol response over time.
+- Caffeine doesn't create energy. It blocks adenosine receptors and masks fatigue. Drink it too early and the adenosine is still piling up behind the blockade, which is what the afternoon crash actually is.
+- Half-life is 5-6 hours. Caffeine at 2pm means half of it is still working at 7 or 8pm.
+- Evening caffeine delays melatonin by about 40 minutes (Science Translational Medicine).
+- Conservative cutoff: nothing within 10 hours of bedtime.
+- If you don't drink caffeine at all, you're already ahead. The cortisol and adenosine cycle runs unmasked, which means steadier energy through the day and better sleep without doing anything.
 
 ---
 
-## Sound & Music for Focus
+## Sound and music for focus
 
 | Sound Type | Best For | Why |
 |---|---|---|
 | **Brown noise** | Analytical/deep work | Masks speech frequencies better than white noise. Many ADHD individuals report significant focus improvement |
 | **40Hz binaural beats** | Concentration | Gamma-range associated with focus (mixed evidence, but consistent auditory environment helps) |
-| **Instrumental music** | Analytical work | No lyrics — lyrics in any language you understand impair language-based tasks |
+| **Instrumental music** | Analytical work | No lyrics. Lyrics in any language you understand impair language-based tasks |
 | **Nature sounds / silence** | Creative work | Lower stimulation supports divergent thinking |
-| **Brain.fm** | Both | Uses neural phase-locking (not traditional binaural beats). Backed by fMRI studies. Reaches effective state in ~5 min |
+| **Brain.fm** | Both | Uses neural phase-locking rather than traditional binaural beats. Backed by fMRI studies. Reaches effective state in ~5 min |
 
-> **Pro tip**: Using the same focus soundtrack creates a Pavlovian association that speeds up the transition into focus mode over time.
+> Reusing the same focus soundtrack builds a Pavlovian association, and the transition into focus gets faster over time.
 
 ---
 
-## Flow State Triggers (Steven Kotler Research)
+## Flow state triggers (Steven Kotler)
 
-Kotler's Flow Research Collective identified 22 triggers. The most actionable:
+Kotler's Flow Research Collective identified 22 triggers. The ones you can actually act on:
 
 ```mermaid
 mindmap
@@ -199,17 +190,17 @@ mindmap
       Flow cannot be entered in fragmented sessions
 ```
 
-> Kotler's Flow Research Collective reports an average **70% improvement** across seven flow metrics in its own training programs (a program/marketing metric, not a peer-reviewed result — but the triggers themselves are well grounded).
+> Kotler's Flow Research Collective reports an average 70% improvement across seven flow metrics in its own training programs. That's a program metric rather than a peer-reviewed result, though the triggers themselves are well grounded.
 
 ---
 
-## The Flowtime Technique (Best Pomodoro Alternative)
+## The Flowtime technique
 
-The Pomodoro's fixed 25-minute timer interrupts flow. The Flowtime technique respects your natural rhythm:
+Pomodoro's fixed 25-minute timer cuts you off mid-flow. Flowtime works around your actual rhythm instead:
 
-1. Start a timer when you begin working — do NOT set an alarm
-2. Work until focus naturally fades, then note elapsed time
-3. Take a proportional break:
+1. Start a timer when you begin. Don't set an alarm.
+2. Work until focus fades on its own, then note the elapsed time.
+3. Take a proportional break.
 
 | Work Duration | Break |
 |---|---|
@@ -219,9 +210,9 @@ The Pomodoro's fixed 25-minute timer interrupts flow. The Flowtime technique res
 
 ---
 
-## Digital Minimalism Protocol
+## Digital minimalism protocol
 
-The average person checks their phone **96 times/day**. Gen Z: 150+.
+The average person checks their phone 96 times a day. Gen Z is past 150.
 
 ```mermaid
 flowchart TD
@@ -240,21 +231,21 @@ flowchart TD
 
 ---
 
-## Dopamine Management (What Actually Works)
+## Dopamine management
 
-"Dopamine detox" is misleading — no evidence supports it. What the science actually shows:
+"Dopamine detox" is a misleading term with no evidence behind it. What the research does support:
 
-- **Avoid dopamine stacking** — layering multiple pleasurable stimuli (music + phone + coffee + pre-workout) before a task creates an artificial peak followed by a crash below baseline, killing motivation
-- **Cold exposure**: a sustained, hours-long rise in dopamine above baseline without the crash that follows stimulants. (The widely quoted "250% increase" comes from ~1 hour in 14°C water; short 1-5 min plunges give a smaller but still meaningful bump.) Target ~11 minutes/week across 2-4 sessions at 4-10°C / 40-50°F (Huberman)
-- **Reduce supernormal stimuli**: Social media, porn, ultra-processed food, gambling hijack the reward system with larger spikes than natural rewards
-- **Pursue "earned dopamine"**: Exercise, completing hard work, learning, and social connection provide dopamine through healthier pathways
-- **Think about the anticipation, not the reward**: Positive anticipation of goals generates sustained dopamine lasting hours to days
+- Avoid dopamine stacking. Layering pleasurable stimuli before a task (music plus phone plus coffee plus pre-workout) creates an artificial peak and then a crash below baseline, which kills motivation.
+- Cold exposure works. It produces a sustained, hours-long rise in dopamine above baseline without the crash stimulants leave behind. The widely quoted 250% figure comes from about an hour in 14°C water, so a 1-5 minute plunge gives you something smaller but still real. Target roughly 11 minutes a week across two to four sessions at 4-10°C / 40-50°F (Huberman).
+- Reduce supernormal stimuli. Social media, porn, ultra-processed food and gambling hijack the reward system with spikes larger than anything natural.
+- Go after earned dopamine instead: exercise, finishing hard work, learning, time with people.
+- Think about the anticipation rather than the reward. Positive anticipation of a goal generates dopamine that lasts hours or days.
 
 ---
 
-## Compounding Effects
+## Compounding effects
 
-This is not a one-day hack. It's a practice with compound returns:
+This isn't a one-day hack. It's a practice, and the returns arrive late:
 
 ```mermaid
 timeline
@@ -266,13 +257,11 @@ timeline
     Week 12 : Focus becomes your default mode
 ```
 
-## Identity Lock
+## Identity lock
 
-The final piece: **You must identify as someone who operates this way.**
+The last piece is that you have to see yourself as someone who works this way. Not "I'm trying to focus more" but "I protect my focus."
 
-Not "I'm trying to focus more." Instead: **"I am someone who protects their focus."**
-
-Every time you sit down and push through the resistance, you cast a vote for this identity. Every vote strengthens it.
+Every time you sit down and push through the resistance, you cast a vote for that version of yourself, and the votes accumulate.
 
 ```mermaid
 mindmap
@@ -284,7 +273,7 @@ mindmap
     Say it. Do it. Repeat. It becomes true.
 ```
 
-## The Optimal Deep Work Day
+## The optimal deep work day
 
 ```mermaid
 gantt
@@ -296,30 +285,30 @@ gantt
         Movement + hydrate             :06:15, 15m
         Pre-work ritual (NSDR/breathe) :06:30, 10m
     section Deep Work
-        Block 1 — analytical work     :crit, 06:40, 90m
+        Block 1 (analytical work)      :crit, 06:40, 90m
         Real break (walk, no screens)  :08:10, 15m
-        Block 2 — analytical work     :crit, 08:25, 90m
+        Block 2 (analytical work)      :crit, 08:25, 90m
         Break                          :09:55, 15m
-        Block 3 — creative work       :crit, 10:10, 75m
+        Block 3 (creative work)        :crit, 10:10, 75m
     section Afternoon
         Meetings, admin, shallow       :11:25, 240m
     section Notes
         Caffeine-free advantage         :milestone, 07:30, 0m
 ```
 
-> **Key insight**: Prioritize analytical/implementation tasks in the morning (0-8 hours after waking) when norepinephrine and cortisol are elevated. Shift to creative/brainstorming work in the afternoon when serotonin is relatively higher.
+Put analytical and implementation work in the morning, in the first eight hours after waking, while norepinephrine and cortisol are elevated. Shift creative and brainstorming work to the afternoon when serotonin is relatively higher.
 
-Most people can sustain 3-4 hours of true deep work per day. That's enough to outperform 99% of people who scatter their attention across 8+ hours.
+Most people can hold three or four hours of genuine deep work a day. That's plenty to outwork almost everyone spreading their attention across eight.
 
 ## References
 
-- Cal Newport — *Deep Work*
-- Mihaly Csikszentmihalyi — *Flow*
-- Steven Kotler — *The Art of Impossible* + Flow Research Collective
-- Andrew Huberman — Focus Toolkit, Dopamine Control, NSDR (Huberman Lab Podcast)
-- Nir Eyal — *Indistractable*
-- Chris Bailey — *Hyperfocus*
-- DeskTime — 52/17 productivity research
-- Nathaniel Kleitman — Basic Rest-Activity Cycle (ultradian rhythms)
-- Science Translational Medicine — Caffeine and circadian rhythm
-- UC Irvine — Notification recovery time research
+- Cal Newport, *Deep Work*
+- Mihaly Csikszentmihalyi, *Flow*
+- Steven Kotler, *The Art of Impossible* and the Flow Research Collective
+- Andrew Huberman, Focus Toolkit, Dopamine Control, NSDR (Huberman Lab Podcast)
+- Nir Eyal, *Indistractable*
+- Chris Bailey, *Hyperfocus*
+- DeskTime, 52/17 productivity research
+- Nathaniel Kleitman, the basic rest-activity cycle (ultradian rhythms)
+- Science Translational Medicine, caffeine and circadian rhythm
+- UC Irvine, notification recovery time research

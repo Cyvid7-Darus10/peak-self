@@ -1,6 +1,6 @@
 # Peak Self
 
-A personal knowledge base for optimal human performance — focus, fitness, health, career, business, engineering, mindset, and the things I'm building.
+A personal knowledge base for working well: focus, fitness, health, career, business, engineering, mindset, and the things I'm building.
 
 ## Structure
 
@@ -29,53 +29,56 @@ peak-self/
     └── curated-links.md
 ```
 
-## Core Philosophy
+## Core philosophy
 
 > You don't rise to the level of your goals. You fall to the level of your systems.
-> — James Clear
+>
+> James Clear
 
-This repo is a living system — not a collection of tips. Each section contains actionable protocols you can implement today, not theory to read and forget. Claims are evidence-based and cited; corrections are welcome.
+Everything in here is meant to be run, not read. Each file holds protocols I can start this week rather than theory I'll nod along to and forget. Claims are cited where I have a source, and corrections are welcome.
 
 ## Sections
 
 | Domain | What's inside |
 |--------|---------------|
-| 🎯 [Focus](focus/flow-state-protocol.md) | Deep work, flow-state protocol, ultradian rhythms, dopamine + caffeine timing |
-| 💪 [Fitness](fitness/training-protocol.md) | Polarized training, hypertrophy, Zone 2 + VO2max, sleep, recovery, nutrition |
-| 🧪 [Health](health/supplement-stack.md) | My actual supplement/longevity stack, daily routine, costs, interaction notes |
-| 📈 [Career](career/growth-system.md) | Growth flywheel, leverage, negotiation, decision frameworks, Senior→Staff→Principal roadmap |
-| 💼 [Business](business/startup-playbook.md) | Validation, pricing, GTM, why startups fail, B2B + bootstrapping, solo-AI playbook, my founder journey |
-| 🛠️ [Engineering](engineering/principles.md) | Principles & laws, ADRs/RFCs/postmortems, DORA metrics, Claude Code + dev setup, reading AI-generated code |
-| 🧠 [Mindset](mindset/identity-architecture.md) | Identity-first habits, implementation intentions, Stoic practices, mental models |
-| 🎨 [Hobbies](hobbies/interests.md) | Reading, side projects (arkitekto.review, miming.io), things I'm building |
-| 🔗 [Resources](resources/curated-links.md) | Curated channels, podcasts, books, newsletters, tools, learning roadmaps |
+| [Focus](focus/flow-state-protocol.md) | Deep work, flow-state protocol, ultradian rhythms, dopamine and caffeine timing |
+| [Fitness](fitness/training-protocol.md) | Polarized training, hypertrophy, Zone 2 and VO2max, sleep, recovery, nutrition |
+| [Health](health/supplement-stack.md) | My actual supplement and longevity stack, daily routine, costs, interaction notes |
+| [Career](career/growth-system.md) | Growth flywheel, leverage, negotiation, decision frameworks, the Senior to Principal roadmap |
+| [Business](business/startup-playbook.md) | Validation, pricing, GTM, why startups fail, B2B and bootstrapping, the solo-AI playbook, my founder journey |
+| [Engineering](engineering/principles.md) | Principles and laws, ADRs/RFCs/postmortems, DORA metrics, Claude Code and dev setup, reading AI-generated code |
+| [Mindset](mindset/identity-architecture.md) | Identity-first habits, implementation intentions, Stoic practices, mental models |
+| [Hobbies](hobbies/interests.md) | Reading, side projects (arkitekto.review, miming.io), things I'm building |
+| [Resources](resources/curated-links.md) | Curated channels, podcasts, books, newsletters, tools, learning roadmaps |
 
-## Quick Start
+## Quick start
 
-### Life Operating System
-1. Start with [Focus Protocol](focus/flow-state-protocol.md) — everything else compounds from here
-2. Build your [Training Base](fitness/training-protocol.md) — physical energy fuels mental output
-3. Dial in your [Supplement Stack](health/supplement-stack.md) — the daily longevity routine and what it costs
-4. Design your [Career System](career/growth-system.md) — deliberate moves, not drift
-5. Develop your [Operating Identity](mindset/identity-architecture.md) — become the person who does this by default
-6. Turn projects into a [Business](business/startup-playbook.md) — validate, price, distribute; lessons from past swings
-7. Pursue what you [actually enjoy](hobbies/interests.md) — reading, side projects, and the things I'm building
+### Life operating system
 
-### Engineering Excellence
-1. Map your [Career Roadmap](career/senior-engineer-roadmap.md) — Senior → Staff → Principal ladder, IC vs management, salary benchmarks
-2. Master the [Engineering Principles](engineering/principles.md) — Laws every senior engineer should know, debugging models, DORA metrics
-3. Level up your [Engineering Practices](engineering/practices.md) — ADRs, RFCs, code review, postmortems, documentation-driven development
-4. Optimize your [Dev Setup](engineering/dev-setup.md) — Claude Code, terminal tools, AI workflows, CI/CD, dotfiles, and reading every line of AI-generated code
+1. Start with the [focus protocol](focus/flow-state-protocol.md). Everything else compounds from here.
+2. Build a [training base](fitness/training-protocol.md). Physical energy is what mental output runs on.
+3. Dial in the [supplement stack](health/supplement-stack.md): the daily routine and what it actually costs.
+4. Design a [career system](career/growth-system.md) so the moves are deliberate instead of drift.
+5. Write down an [operating identity](mindset/identity-architecture.md) and become the person who does this by default.
+6. Turn projects into a [business](business/startup-playbook.md): validate, price, distribute, and learn from the swings that missed.
+7. Make room for what you [actually enjoy](hobbies/interests.md): reading, side projects, the things I'm building.
+
+### Engineering
+
+1. Map the [career roadmap](career/senior-engineer-roadmap.md): the Senior/Staff/Principal ladder, IC vs management, salary benchmarks.
+2. Learn the [engineering principles](engineering/principles.md): the laws worth knowing, debugging models, DORA metrics.
+3. Pick up the [engineering practices](engineering/practices.md): ADRs, RFCs, code review, postmortems, documentation-driven development.
+4. Tune the [dev setup](engineering/dev-setup.md): Claude Code, terminal tools, AI workflows, CI/CD, dotfiles, and reading every line of what the AI writes.
 
 ## Principles
 
-- **Elimination before optimization** — remove friction before adding tools
-- **Systems over goals** — design environments and habits, not wish lists
-- **Identity over discipline** — "I am someone who..." beats "I should..."
-- **Compound returns** — small daily inputs create exponential long-term output
-- **Measure what matters** — track the lead indicators, not just outcomes
-- **Start simple, evolve complexity** — Gall's Law: complex systems evolve from simple ones that worked
-- **Write it down** — ADRs, RFCs, docs: writing forces clarity and scales knowledge
-- **AI drafts, engineers decide** — leverage AI for volume, apply judgment for quality; read every line and own what you ship
-- **Distribution > product** — a worse product with better distribution wins; validate demand before you build
-- **Failure is tuition** — every failed swing should leave a reusable asset (a validated ICP, a channel, an audience)
+- Remove friction before adding tools.
+- Design environments and habits instead of writing wish lists.
+- "I am someone who..." beats "I should...".
+- Small daily inputs compound, and most of the payoff arrives late.
+- Track the lead indicators, not just the outcomes.
+- Start simple. Gall's Law: the complex systems that work grew out of simple ones that worked.
+- Write it down. ADRs, RFCs and docs force clarity and let knowledge outlive you.
+- AI drafts, I decide. Read every line and own what ships.
+- Distribution beats product. A worse product with better distribution wins, so validate demand before building.
+- Failure is tuition. Every failed swing should leave behind something reusable: a validated ICP, a channel, an audience.

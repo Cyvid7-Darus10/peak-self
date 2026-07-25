@@ -1,10 +1,10 @@
-# Identity Architecture
+# Identity architecture
 
 > You do not rise to the level of your goals. You fall to the level of your identity.
 
-## The Identity-Behavior Loop
+## The identity-behavior loop
 
-Most people set goals and try to force behavior change. It doesn't last. The sustainable path is identity-first:
+Most people set a goal and then try to force the behavior. It doesn't hold. Working from identity outward does:
 
 ```mermaid
 flowchart LR
@@ -31,26 +31,24 @@ flowchart TB
     style C fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> Work from the inside out. Not outside in.
+---
+
+## Motivation vs discipline: what the research says
+
+Ego depletion is probably a myth. A large replication across 23 labs and 2,141 participants failed to reproduce the original "willpower as a limited resource" finding. What holds up instead:
+
+- High motivation offsets whatever depletion exists. The effect looks more like waning interest than a drained tank.
+- What you believe about willpower becomes self-fulfilling. People who think it's limitless pursue more goals, burn out less, and report being happier.
+- Environment design beats willpower outright. Remove friction from the good habits and add it to the bad ones so you need less discipline in the first place.
+- When motivation is low, shrink the task. "I'll just do two minutes" gets you past the activation energy, and you rarely stop at two minutes.
+
+So don't wait on motivation to start. Use implementation intentions, environment design and identity, and save actual discipline for the handful of moments that need it.
 
 ---
 
-## The Science: Motivation vs Discipline
+## Defining your operating identity
 
-**Ego depletion is likely a myth.** A large replication across 23 labs (2,141 participants) failed to replicate the original "willpower as limited resource" theory. What the current science actually shows:
-
-- **High motivation offsets any willpower depletion** — the effect may be about waning interest, not a drained resource
-- **Beliefs about willpower become self-fulfilling** — people who believe willpower is limitless pursue goals more, burn out less, and report greater happiness
-- **Environment design beats willpower** — reduce the need for discipline entirely. Remove friction for good habits, add friction for bad ones
-- **When motivation is low, shrink the task** — "I'll just do 2 minutes" overcomes activation energy. You rarely stop at 2 minutes
-
-> **Bottom line**: Don't rely on motivation to start. Use implementation intentions, environment design, and identity. Reserve discipline for the few high-stakes moments that matter.
-
----
-
-## Defining Your Operating Identity
-
-Write down who you are becoming. Present tense. Non-negotiable.
+Write down who you're becoming. Present tense, non-negotiable.
 
 ```mermaid
 mindmap
@@ -70,13 +68,13 @@ mindmap
       That's how I grow
 ```
 
-> Write your own. Read them daily. Then ACT as that person.
+> Write your own. Read them daily. Then act like that person.
 
 ---
 
-## Voting for Your Identity
+## Voting for your identity
 
-Every action is a vote for the type of person you want to become.
+Every action is a vote for the kind of person you're becoming.
 
 ```mermaid
 flowchart LR
@@ -96,26 +94,27 @@ flowchart LR
     style V7 fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-You don't need a perfect record. You need a majority. Win more votes than you lose.
+You don't need a perfect record, just a majority. Win more votes than you lose.
 
 ---
 
-## Habit Stacking & Implementation Intentions
+## Habit stacking and implementation intentions
 
-### The Research (A Robust, Well-Replicated Effect)
+### The research
 
-In a classic exercise study (Milne, Orbell & Sheeran), participants given an implementation-intention prompt vs. motivation alone:
-- **Specific if-then plan** ("If it's Monday at 6 AM, then I will go to the gym") = **91% followed through**
-- **Motivation only** ("I want to exercise") = **39% followed through**
-- **No intervention (control)** = **29%**
+In a classic exercise study (Milne, Orbell and Sheeran), participants given an implementation-intention prompt were compared against motivation alone:
 
-Across many studies, if-then plans produce a medium effect (d ≈ 0.65) — people who make them are roughly **2-3x more likely** to achieve their goals.
+- Specific if-then plan ("if it's Monday at 6 AM, then I go to the gym"): 91% followed through
+- Motivation only ("I want to exercise"): 39%
+- No intervention: 29%
 
-### Habit Stacking Formula
+Across many studies the effect is medium sized (d ≈ 0.65), which works out to people with if-then plans being roughly two to three times more likely to hit their goals.
 
-**"After I [CURRENT HABIT], I will [NEW HABIT]."**
+### The formula
 
-Link a new behavior to an established habit's neural pathway instead of building one from scratch.
+**"After I [current habit], I will [new habit]."**
+
+You're borrowing an established habit's neural pathway instead of building one from nothing.
 
 ```mermaid
 flowchart TD
@@ -133,54 +132,53 @@ flowchart TD
     style H fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> Start with stacks of 2-3 habits maximum. Once automatic (typically 2-4 weeks), add another.
+> Keep stacks to two or three habits. Once they run automatically, usually after two to four weeks, add another.
 
 ---
 
-## Journaling Techniques That Work
+## Journaling techniques that work
 
-### Morning Pages (Julia Cameron)
+### Morning pages (Julia Cameron)
 
-Write 3 pages of longhand stream-of-consciousness first thing in the morning. Don't re-read them — the value is in the writing, not the reading. Functions as a "mental declutter" — externalizing anxious thoughts frees cognitive resources and enhances creativity.
+Three pages of longhand stream-of-consciousness, first thing. Don't re-read them. The value is in the writing. It works as a mental declutter: getting anxious thoughts out of your head frees up the capacity they were occupying.
 
-### Interstitial Journaling (Tony Stubblebine)
+### Interstitial journaling (Tony Stubblebine)
 
-Every time you transition between tasks, write a few sentences about what you just did and what you're about to do, with a timestamp. Combats context-switching costs, creates micro-commitments, and reduces procrastination. Keep it in one running document throughout the day.
+Whenever you switch tasks, write a few sentences with a timestamp about what you just did and what you're moving to. It cuts the cost of context switching, creates small commitments, and makes procrastination harder to slip into. Keep it in one running document for the day.
 
-### Gratitude Journaling (Strongest Evidence)
+### Gratitude journaling (strongest evidence)
 
-Write 3-5 specific things you're grateful for. UC Davis research (Robert Emmons):
-- 10 weeks of weekly gratitude journaling → more positive moods, optimism, and better sleep
+Write down three to five specific things. Robert Emmons' UC Davis research found ten weeks of weekly gratitude journaling led to more positive moods, more optimism, and better sleep.
 
-**Critical finding on frequency**: Writing **once or twice per week is MORE beneficial than daily**. Weekly boosted happiness; three times per week did not.
+The frequency finding is the surprising part: once or twice a week beats daily. Weekly boosted happiness, three times a week did not.
 
-> **Be specific.** "I'm grateful for Sarah calling to check on me when I was stressed" > "I'm grateful for friends"
-
----
-
-## Visualization & Mental Rehearsal
-
-### The Neuroscience
-
-Neuroimaging (fMRI, EEG) shows that imagining an action activates the **same brain regions** as physically performing it ("functional equivalence"). Visualization strengthens neural pathways, muscle memory, focus, and confidence.
-
-### The Protocol (Research-Backed)
-
-- **Optimal dosage**: 10 minutes per session, 3x per week, over ~100 days
-- **Process > outcome**: Visualize the steps and actions, not just the end result
-- **First-person perspective**: Seeing through your own eyes is more effective than watching yourself from outside
-- **Multi-sensory**: Don't just "see" — feel the movements, hear the sounds, experience the emotions
-- **Combine with physical practice**: Supplement, don't replace
-
-> **Apply beyond sports**: presentations, difficult conversations, sales calls, any high-stakes performance. 5-10 minutes of vivid process visualization beforehand.
+> Be specific. "I'm grateful Sarah called to check on me when I was stressed" does more than "I'm grateful for friends."
 
 ---
 
-## Stoic Philosophy (Practical Applications)
+## Visualization and mental rehearsal
 
-Stoicism was the original inspiration for **Cognitive-Behavioral Therapy (CBT)**, the leading form of evidence-based psychotherapy. Participants in Modern Stoicism's "Stoic Week" self-report roughly **+13% positive emotions and -21% negative emotions** (a self-selected online survey, not a controlled trial — directional, not definitive).
+### The neuroscience
 
-### Daily Techniques
+fMRI and EEG work shows that imagining an action lights up the same brain regions as doing it, which researchers call functional equivalence. Visualization strengthens the neural pathways, muscle memory, focus and confidence you'd otherwise build through reps.
+
+### The protocol
+
+- Dosage: 10 minutes per session, three times a week, over roughly 100 days.
+- Visualize the process rather than the outcome. Rehearse the steps, not the trophy.
+- Use first person. Seeing it through your own eyes beats watching yourself from outside.
+- Make it multi-sensory. Feel the movement, hear the sound, run the emotions.
+- Treat it as a supplement to physical practice, never a replacement.
+
+This carries past sports. Five to ten minutes of vivid process visualization works for presentations, difficult conversations, sales calls, anything with stakes.
+
+---
+
+## Stoic philosophy, applied
+
+Stoicism was the original inspiration for cognitive-behavioral therapy, still the leading form of evidence-based psychotherapy. Participants in Modern Stoicism's "Stoic Week" self-report roughly 13% more positive emotions and 21% fewer negative ones. That's a self-selected online survey rather than a controlled trial, so treat it as directional.
+
+### Daily techniques
 
 ```mermaid
 flowchart TD
@@ -198,16 +196,19 @@ flowchart TD
 
 ---
 
-## Mental Models for Daily Life
+## Mental models for daily life
 
-### 1. The Two-Day Rule
-Never skip a habit two days in a row. One day off is rest. Two days is the start of a new (bad) habit.
+### 1. The two-day rule
 
-### 2. The 40% Rule (Navy SEALs)
-When your mind says you're done, you're only at 40% of your actual capacity. The discomfort is a signal, not a stop sign.
+Never skip a habit two days running. One day off is rest. Two days is how the old habit gets its foot back in the door.
+
+### 2. The 40% rule (Navy SEALs)
+
+When your mind says you're finished, you're at about 40% of actual capacity. Treat the discomfort as information rather than an instruction.
 
 ### 3. Inversion (Charlie Munger)
-Instead of "How do I succeed?", ask "What would guarantee failure?" — then avoid those things.
+
+Instead of asking how to succeed, ask what would guarantee failure, then avoid those things.
 
 ```mermaid
 flowchart TB
@@ -225,8 +226,9 @@ flowchart TB
     style INVERT fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-### 4. The Compound Effect
-Small, consistent actions over time produce results that look like overnight success to outsiders.
+### 4. The compound effect
+
+Small consistent actions produce results that look like overnight success from outside.
 
 ```mermaid
 xychart-beta
@@ -236,20 +238,23 @@ xychart-beta
     line [1, 1.35, 1.82, 2.45, 3.31, 4.48, 6.05, 11.02, 19.79, 37.78]
 ```
 
-> 1% better every day for a year = **37x better**. The math is real. The timeline is the hard part.
+> 1% better every day for a year comes to 37x. The math is easy. Sitting through the flat part is not.
 
-### 5. Memento Mori
-You will die. This is not morbid — it's clarifying. It removes the option of "someday" and replaces it with "today or never."
+### 5. Memento mori
 
-### 6. First Principles (Elon Musk)
-Break problems to fundamental truths and reason up. Don't accept "that's how it's always been done."
+You're going to die. That's clarifying rather than morbid, because it takes "someday" off the table and leaves you with today.
 
-### 7. Circle of Competence (Munger)
-Know what you know. More importantly, know what you don't. The danger zone is thinking you know something you don't.
+### 6. First principles (Elon Musk)
+
+Break the problem down to fundamental truths and reason up from there. Don't accept "that's how it's always been done" as an answer.
+
+### 7. Circle of competence (Munger)
+
+Know what you know, and know what you don't. The dangerous zone is the stuff you think you know.
 
 ---
 
-## The Daily Reset
+## The daily reset
 
 ```mermaid
 flowchart LR
@@ -272,31 +277,31 @@ flowchart LR
 
 ---
 
-## The Top 10 Highest-Leverage Actions (Research-Ranked)
+## The ten highest-leverage actions
 
-1. **Use implementation intentions for every goal** — "If [situation], then [action]" doubles to triples success rate
-2. **Design your environment** rather than relying on willpower — remove friction for good, add for bad
-3. **Practice the Dichotomy of Control daily** — categorize concerns each morning
-4. **Visualize process, not outcomes** — 10 min, 3x/week, multi-sensory, first-person
-5. **Gratitude journal 1-2x per week** (not daily) — specific, concrete entries
-6. **Build in public on one platform** — document your journey consistently
-7. **Stack new habits onto existing ones** — keep stacks small (2-3 max) until automatic
-8. **Use the Two-Way Door framework** — most choices are reversible; treat them that way
-9. **Anchor high in negotiations** and always initiate the salary discussion
-10. **Reduce supernormal stimuli** (social media, ultra-processed food) instead of "dopamine detox"
+1. Use implementation intentions for every goal. "If [situation], then [action]" doubles or triples the success rate.
+2. Design your environment instead of relying on willpower. Remove friction for the good, add it to the bad.
+3. Run the dichotomy of control each morning. Sort concerns into what you control and what you don't.
+4. Visualize the process rather than the outcome: 10 minutes, three times a week, multi-sensory, first person.
+5. Gratitude journal once or twice a week rather than daily, with specific entries.
+6. Build in public on one platform and keep documenting.
+7. Stack new habits onto existing ones, two or three at a time until they're automatic.
+8. Use the two-way door framework. Most choices are reversible, so decide like it.
+9. Anchor high in negotiations and raise the salary question first.
+10. Reduce supernormal stimuli like social media and ultra-processed food, rather than attempting a "dopamine detox."
 
 ## References
 
-- James Clear — *Atomic Habits* (identity-based habits, habit stacking)
-- Ryan Holiday — *The Obstacle Is the Way*, *Ego Is the Enemy* (Stoic mental models)
-- Marcus Aurelius — *Meditations* (Gregory Hays translation)
-- David Goggins — *Can't Hurt Me* (40% rule, mental toughness)
-- Steven Pressfield — *The War of Art*
-- Viktor Frankl — *Man's Search for Meaning*
-- Naval Ravikant — *The Almanack of Naval Ravikant*
-- Charlie Munger — *Poor Charlie's Almanack*
-- Peter Gollwitzer — Implementation intentions research (Stanford SPARQ)
-- Robert Emmons — Gratitude research (UC Davis)
-- Modern Stoicism — 13%/21% emotion improvement study
-- APA — Willpower and ego depletion replication research
-- Frontiers in Psychology — Self-discipline and procrastination study
+- James Clear, *Atomic Habits* (identity-based habits, habit stacking)
+- Ryan Holiday, *The Obstacle Is the Way* and *Ego Is the Enemy*
+- Marcus Aurelius, *Meditations* (Gregory Hays translation)
+- David Goggins, *Can't Hurt Me* (40% rule)
+- Steven Pressfield, *The War of Art*
+- Viktor Frankl, *Man's Search for Meaning*
+- Naval Ravikant, *The Almanack of Naval Ravikant*
+- Charlie Munger, *Poor Charlie's Almanack*
+- Peter Gollwitzer, implementation intentions research (Stanford SPARQ)
+- Robert Emmons, gratitude research (UC Davis)
+- Modern Stoicism, the 13%/21% emotion study
+- APA, willpower and ego depletion replication research
+- Frontiers in Psychology, self-discipline and procrastination study

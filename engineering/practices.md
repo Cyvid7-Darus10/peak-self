@@ -1,12 +1,12 @@
-# Engineering Practices
+# Engineering practices
 
-> "From the perspective of a user, if a feature is not documented, then it doesn't exist." — Write the docs first.
+> "From the perspective of a user, if a feature is not documented, then it doesn't exist." So write the docs first.
 
-## Architecture Decision Records (ADRs)
+## Architecture decision records (ADRs)
 
-A short document capturing **one significant architectural decision**, its context, and consequences. Answers "why was this built this way?" months later.
+A short document capturing one significant architectural decision, its context, and what it cost you. It's what answers "why was this built this way?" nine months later.
 
-### Template (Nygard Format)
+### Template (Nygard format)
 
 ```markdown
 # ADR-001: [Title]
@@ -24,27 +24,21 @@ What is the change we are proposing/doing?
 What becomes easier or harder as a result?
 ```
 
-### When to Write an ADR
+### When to write one
 
 - Choosing a database, framework, or major library
 - Defining API contracts or communication patterns
 - Security architecture decisions
-- Build vs. buy decisions
-- Any decision expensive to reverse
+- Build vs buy
+- Anything expensive to reverse
 
-### Best Practices
+### How to keep them useful
 
-- **One decision per ADR** — never combine multiple decisions
-- **Immutable once accepted** — supersede, never edit
-- **Store in the repo** — `docs/adr/` alongside the code
-- **Number sequentially** — `0001-use-postgres.md`
-- **Write at decision time** — not retroactively
-- **Keep them short** — 1-2 pages max
-- **Review as a team** — 30-45 minute meetings max
+One decision per ADR, never a bundle. Once accepted they're immutable, so supersede rather than edit. Store them in the repo under `docs/adr/` next to the code, numbered sequentially (`0001-use-postgres.md`). Write them at decision time, not retroactively, keep them to a page or two, and review as a team in meetings no longer than 45 minutes.
 
 ---
 
-## RFC (Request for Comments) Process
+## RFC process
 
 ### Template
 
@@ -77,7 +71,7 @@ Deployment strategy and rollback plan.
 Unresolved issues for discussion.
 ```
 
-### RFC vs Just Do It
+### RFC or just do it
 
 ```mermaid
 flowchart TD
@@ -93,22 +87,24 @@ flowchart TD
 
 ### Process
 
-1. Author writes draft RFC
-2. Circulate for async review (3-7 days)
+1. Author writes a draft
+2. Circulate for async review, three to seven days
 3. Reviewers leave inline comments
-4. Author addresses comments, updates RFC
-5. Decision meeting (if needed) or async approval
-6. RFC accepted/rejected — becomes permanent record
+4. Author addresses them and updates
+5. Decision meeting if one is needed, otherwise async approval
+6. Accepted or rejected, and either way it becomes a permanent record
 
 ---
 
-## Code Review
+## Code review
 
-### Google's Standard
+### Google's standard
 
-> "Favor approving a CL once it is in a state where it definitely improves the overall code health of the system, even if it isn't perfect." There is no perfect code — only better code.
+> "Favor approving a CL once it is in a state where it definitely improves the overall code health of the system, even if it isn't perfect."
 
-### The Three-Pass Approach
+There's no perfect code, only better code than what's there now.
+
+### The three-pass approach
 
 ```mermaid
 flowchart LR
@@ -119,45 +115,35 @@ flowchart LR
     style C fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-### What Senior Engineers Look For
+### What to look for
 
-- **Architectural impact**: Does this fit the bigger system? Does it introduce coupling?
-- **Hidden complexity**: Will the next person understand this in 6 months?
-- **Test quality**: Testing behavior, not implementation details?
-- **Security**: Input validation, authentication, data exposure
-- **Performance**: N+1 queries, unnecessary allocations, missing indexes
+Does this fit the bigger system, or does it introduce coupling you'll pay for later? Will the next person understand it in six months? Are the tests checking behavior or implementation details? Is input validated, auth handled, data not leaking? And the usual performance traps: N+1 queries, unnecessary allocations, missing indexes.
 
-### Giving Feedback
+### Giving feedback
 
-- Use **"Nit:"** prefix for non-blocking suggestions
-- **Ask questions** instead of demands: "What do you think about..." > "Change this to..."
-- **Explain the why**: "This could cause N+1 queries because..." not just "Fix this"
-- **Distinguish severity**: Blocking issues vs. suggestions vs. nits
-- **Praise good code**: Positive feedback reinforces good patterns
+- Prefix non-blocking suggestions with "Nit:"
+- Ask rather than demand. "What do you think about..." lands better than "Change this to..."
+- Explain the why. "This could cause N+1 queries because..." beats "Fix this"
+- Say which comments are blocking and which aren't
+- Point out the good parts too. It's the cheapest way to reinforce a pattern
 
-### Receiving Feedback
+### Receiving feedback
 
-- Assume good intent
-- Separate ego from code
-- Ask clarifying questions if unclear
-- Focus on learning, not defending
+Assume good intent, keep your ego out of the diff, ask when a comment is unclear, and treat it as learning rather than defense.
 
 ### Process
 
-- **Small PRs**: Under 400 lines — large PRs get superficial review
-- **Respond within one business day**, ideally hours
-- **Never let PRs stall** — escalate unresolved disagreements
-- **Self-review first** before requesting review
+Keep PRs under 400 lines, because large ones get skimmed rather than reviewed. Respond within a business day, ideally hours. Don't let PRs stall, and escalate disagreements instead of letting them rot. Self-review before you request review.
 
 ---
 
-## Incident Response & Postmortems
+## Incident response and postmortems
 
-### Blameless Postmortem Philosophy (Google SRE)
+### Blameless postmortems (Google SRE)
 
 > "When people feel safe, they tell you what really happened. When they're scared, they give you the sanitized version. Sanitized versions don't prevent repeat incidents."
 
-### Postmortem Template
+### Template
 
 ```markdown
 # Incident Postmortem: [Title]
@@ -175,7 +161,7 @@ Users affected, revenue impact, duration of degradation.
 [Chronological events with timestamps]
 
 ## Root Cause
-[Technical explanation — go beyond "human error"]
+[Technical explanation, go beyond "human error"]
 
 ## Contributing Factors
 [Tooling gaps, ambiguous runbooks, missing automation,
@@ -195,24 +181,21 @@ Users affected, revenue impact, duration of degradation.
 [Key takeaways for the org]
 ```
 
-### Root Cause Analysis
+### Root cause analysis
 
-- **Five Whys**: Ask "why?" repeatedly until you reach a systemic cause (not a human one)
-- **Fishbone Diagrams**: Categorize causes into People, Process, Technology, Environment
-- **Fault Tree Analysis**: Map out all possible failure paths
+- Five whys: keep asking until you reach a systemic cause rather than a person
+- Fishbone diagrams: sort causes into people, process, technology, environment
+- Fault tree analysis: map out the possible failure paths
 
 ### Culture
 
-- Leaders model blamelessness — publicly review their own mistakes
-- Recognize and reward well-written postmortems
-- Track action item completion — a postmortem without follow-through is theater
-- Create postmortem newsletters and reading clubs
+Leaders have to model this by reviewing their own mistakes in public. Recognize people who write good postmortems. Track whether action items actually get done, because a postmortem without follow-through is theater. Postmortem newsletters and reading clubs help spread what was learned.
 
 ---
 
-## Documentation-Driven Development
+## Documentation-driven development
 
-### The Process
+### The process
 
 ```mermaid
 flowchart LR
@@ -227,15 +210,15 @@ flowchart LR
     style E fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-### Why It Works
+### Why it works
 
-- **Forces clear thinking**: If you can't explain a feature clearly in writing, the design isn't clear yet
-- **Catches design flaws early**: You realize mid-documentation that your approach won't work — before writing code
-- **Low-cost iteration**: Changing a paragraph is orders of magnitude cheaper than changing code
-- **Better API design**: Consumer-facing docs create outside-in design
-- **AI amplifier**: Comprehensive docs make AI coding tools dramatically more effective. Detailed module docs = AI suggestions that fit perfectly into the project
+Writing forces clarity. If you can't explain the feature in prose, the design isn't finished yet, and you usually find that out halfway through a paragraph rather than halfway through an implementation. Changing a paragraph costs almost nothing compared to changing code.
 
-### What to Document First
+Writing consumer-facing docs first also produces better APIs, since you're designing from the outside in.
+
+There's an AI angle too: detailed module docs make coding assistants noticeably more useful, because the suggestions actually fit the project.
+
+### What to document first
 
 1. Public API contracts (endpoints, parameters, responses)
 2. User-facing behavior and workflows
@@ -245,9 +228,9 @@ flowchart LR
 
 ---
 
-## Engineering Management for Tech Leads
+## Engineering management for tech leads
 
-### 1:1 Meeting Structure
+### 1:1 structure
 
 ```mermaid
 flowchart TD
@@ -262,15 +245,15 @@ flowchart TD
     style E fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-### Key Principles
+### Key principles
 
-- **Psychological safety** is the #1 predictor of high-performing teams (Google's Project Aristotle)
-- **Public credit, private blame** — celebrate wins loudly, address failures privately
-- **Delegate outcomes, not tasks** — provide context without micromanaging
-- **Guided problem-solving** — ask "What have you tried?" before offering solutions
-- **Never skip 1:1s** — they are your most important meeting
+- Psychological safety is the strongest predictor of high-performing teams (Google's Project Aristotle)
+- Credit in public, correct in private
+- Delegate outcomes rather than tasks. Give context, then get out of the way
+- Ask "what have you tried?" before offering the answer
+- Never skip 1:1s. It's the meeting that matters most
 
-### Team Health Signals
+### Team health signals
 
 | Healthy | Warning |
 |---------|---------|
@@ -282,19 +265,19 @@ flowchart TD
 
 ---
 
-## Best Engineering Blogs & Resources
+## Blogs and resources worth following
 
-### Tier 1: Essential
+### Tier 1
 
 | Resource | Focus |
 |----------|-------|
-| **[The Pragmatic Engineer](https://www.pragmaticengineer.com/)** | #1 newsletter for senior engineers. Compensation, architecture, hiring, culture |
+| **[The Pragmatic Engineer](https://www.pragmaticengineer.com/)** | Compensation, architecture, hiring, culture. The one most senior engineers read |
 | **[LeadDev](https://leaddev.com/)** | Engineering leadership, scaling teams, software delivery |
 | **[StaffEng](https://staffeng.com/)** | Staff+ engineering: archetypes, stories, career paths |
 | **[Increment](https://increment.com/)** (Stripe) | Deep-dive magazines on single engineering topics |
 | **[DORA](https://dora.dev/)** | DevOps research, metrics, annual State of DevOps report |
 
-### Tier 2: Company Engineering Blogs
+### Tier 2: company engineering blogs
 
 | Company | Known For |
 |---------|-----------|
@@ -304,7 +287,7 @@ flowchart TD
 | Cloudflare | Networking, edge computing, security |
 | Shopify | Ruby at scale, developer tooling |
 
-### Tier 3: Newsletters
+### Tier 3: newsletters
 
 | Newsletter | Focus |
 |------------|-------|
@@ -312,7 +295,7 @@ flowchart TD
 | **TLDR** | Daily tech news digest |
 | **Software Lead Weekly** | Engineering leadership |
 
-### Key Books
+### Key books
 
 | Book | Author | Why |
 |------|--------|-----|
@@ -329,6 +312,6 @@ flowchart TD
 - [Google Engineering Practices](https://google.github.io/eng-practices/)
 - [Google SRE Book](https://sre.google/sre-book/)
 - [ADR GitHub](https://adr.github.io/)
-- [LeadDev — RFC Guide](https://leaddev.com/software-quality/thorough-team-guide-rfcs)
-- [Pragmatic Engineer — RFCs and Design Docs](https://newsletter.pragmaticengineer.com/p/rfcs-and-design-docs)
-- [Fellow.ai — Engineering Management Principles](https://fellow.app/blog/principles-of-engineering-management/)
+- [LeadDev, RFC guide](https://leaddev.com/software-quality/thorough-team-guide-rfcs)
+- [Pragmatic Engineer, RFCs and design docs](https://newsletter.pragmaticengineer.com/p/rfcs-and-design-docs)
+- [Fellow.ai, engineering management principles](https://fellow.app/blog/principles-of-engineering-management/)

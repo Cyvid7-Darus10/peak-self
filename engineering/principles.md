@@ -1,31 +1,31 @@
-# Engineering Principles & Laws
+# Engineering principles and laws
 
-> "A complex system that works is invariably found to have evolved from a simple system that worked." — Gall's Law
+> "A complex system that works is invariably found to have evolved from a simple system that worked." (Gall's Law)
 
-## The Classics
+## The classics
 
 ### SOLID
 
 | Principle | Rule | In Practice |
 |-----------|------|-------------|
-| **S**ingle Responsibility | A class has one reason to change | One module = one concern |
+| **S**ingle Responsibility | A class has one reason to change | One module, one concern |
 | **O**pen/Closed | Open for extension, closed for modification | Use interfaces and composition |
 | **L**iskov Substitution | Subtypes must be substitutable for base types | Don't break contracts in subclasses |
-| **I**nterface Segregation | Many specific interfaces > one general | Clients shouldn't depend on methods they don't use |
-| **D**ependency Inversion | Depend on abstractions, not concretions | Inject dependencies, don't hardcode them |
+| **I**nterface Segregation | Many specific interfaces beat one general one | Clients shouldn't depend on methods they don't use |
+| **D**ependency Inversion | Depend on abstractions, not concretions | Inject dependencies instead of hardcoding them |
 
-### The Essential Four
+### The essential four
 
 | Principle | What It Means | Common Mistake |
 |-----------|---------------|----------------|
-| **DRY** | Every piece of *knowledge* has a single representation | DRY is about knowledge, not code. Similar-looking code may represent different concepts and should NOT be merged |
-| **KISS** | Favor straightforward over clever | "Debugging is twice as hard as writing code. If you write code as cleverly as possible, you are by definition not smart enough to debug it." — Kernighan |
-| **YAGNI** | Don't implement until actually needed | Speculative generality is one of the most expensive forms of waste |
-| **Boy Scout Rule** | Leave every file better than you found it | Small improvements compound over time |
+| **DRY** | Every piece of *knowledge* has a single representation | DRY is about knowledge, not code. Similar-looking code may represent different concepts and should not be merged |
+| **KISS** | Favor straightforward over clever | "Debugging is twice as hard as writing code. If you write code as cleverly as possible, you are by definition not smart enough to debug it." (Kernighan) |
+| **YAGNI** | Don't build it until you need it | Speculative generality is one of the most expensive forms of waste |
+| **Boy Scout Rule** | Leave every file better than you found it | Small improvements compound |
 
 ---
 
-## The Laws Every Senior Engineer Should Know
+## The laws worth knowing
 
 ```mermaid
 mindmap
@@ -59,7 +59,7 @@ mindmap
         Multiply estimates by 1.5-3x
       Broken Windows
         Visible neglect breeds more neglect
-        One hack invites more hacks — fix them immediately
+        One hack invites more hacks, so fix them immediately
     Probability
       Linus's Law
         Given enough eyeballs, all bugs are shallow
@@ -69,23 +69,23 @@ mindmap
         Remaining 10% = other 90% of time
 ```
 
-### Deep Dives
+### The ones worth understanding properly
 
-**Gall's Law** — The theoretical foundation for MVPs and incremental architecture. You cannot design a complex working system from scratch. Every successful complex system started as a successful simple system.
+**Gall's Law** is the argument for MVPs and incremental architecture. You cannot design a complex working system from scratch. Every successful complex system started life as a successful simple one.
 
-**Conway's Law** — If you want microservices, organize into small autonomous teams. Three teams = three-component architecture. The "Inverse Conway Maneuver" deliberately structures teams to produce the desired architecture.
+**Conway's Law**: if you want microservices, organize into small autonomous teams. Three teams gets you a three-component architecture whether you planned it or not. The inverse Conway maneuver is deliberately structuring teams to produce the architecture you want.
 
-**Hyrum's Law** — With enough users, ALL observable behavior becomes depended on. Every performance characteristic, error message format, and timing quirk is a contract. Implication: be extremely careful with "non-breaking" changes.
+**Hyrum's Law**: with enough users, every observable behavior becomes something someone depends on. Performance characteristics, error message formats, timing quirks, all of it is a contract. Which means "non-breaking" changes deserve suspicion.
 
-**Goodhart's Law** — When code coverage becomes a 100% target, you get meaningless tests. When lines of code become a metric, you get bloat. When velocity becomes a target, you get inflated story points. Use metrics as *indicators*, never as *goals*.
+**Goodhart's Law**: make 100% coverage the target and you get meaningless tests. Make lines of code a metric and you get bloat. Make velocity a target and story points inflate. Metrics are indicators, never goals.
 
-**Law of Leaky Abstractions** (Joel Spolsky) — Every abstraction leaks. ORMs leak SQL. HTTP leaks TCP. React leaks the DOM. You must understand the layer below whatever you use.
+**Law of Leaky Abstractions** (Joel Spolsky): every abstraction leaks. ORMs leak SQL, HTTP leaks TCP, React leaks the DOM. You need to understand the layer under whatever you're using.
 
 ---
 
-## Debugging Mental Models
+## Debugging mental models
 
-### The Scientific Method for Bugs
+### The scientific method for bugs
 
 ```mermaid
 flowchart LR
@@ -101,36 +101,33 @@ flowchart LR
     style E fill:#8e44ad,stroke:#8e44ad,color:#fff
 ```
 
-### Binary Search for Bugs
+### Binary search for bugs
 
-Insert probes at the midpoint of the suspected code path. Each probe eliminates ~50% of possible locations. Transforms debugging from O(n) to O(log n).
+Insert probes at the midpoint of the suspected code path. Each probe eliminates about half the remaining possibilities, which turns debugging from O(n) into O(log n).
 
-Works for:
-- Large codebases (bisect modules/components)
-- Data pipelines (check data at midpoints)
-- Git history (`git bisect` to find the breaking commit)
+It works on large codebases (bisect modules), data pipelines (check the data at midpoints), and git history (`git bisect` to find the breaking commit).
 
-### Key Debugging Principles
+### Debugging principles
 
-- **Resist jumping into code immediately** — understand before fixing
-- **Reproduction is non-negotiable** before claiming resolution
-- **Trust established code first** — libraries and compilers are more likely correct than your code
-- **Hunt for relatives** — if you found one bug, check for similar bugs elsewhere
-- **Rubber duck debugging** — explaining the problem often reveals the solution
-- **Rest effectively** — fatigue is the enemy of debugging
-- **Challenge your mental model** — most bugs exist because your model of the system was wrong
+- Don't jump straight into the code. Understand the thing before you fix it.
+- Reproduce it before you claim it's resolved.
+- Trust established code first. Libraries and compilers are more likely correct than what you wrote yesterday.
+- Hunt for relatives. If you found one bug, similar ones are usually nearby.
+- Explain it out loud. Rubber duck debugging works often enough to be worth the embarrassment.
+- Rest. Tired debugging is mostly wasted debugging.
+- Challenge your mental model. Most bugs exist because your model of the system was wrong.
 
-> Senior engineers use both intuition (to form hypotheses) and the scientific method (to validate them).
+> Senior engineers use intuition to form hypotheses and the scientific method to check them. Skipping either one is how you spend three days on a typo.
 
 ---
 
-## Technical Debt Management
+## Technical debt management
 
-### The Friction Formula
+### The friction formula
 
-**Priority = Frequency of change × Carrying cost per change × Risk of failure**
+**Priority = frequency of change × carrying cost per change × risk of failure**
 
-### Debt Quadrant (Martin Fowler)
+### Debt quadrant (Martin Fowler)
 
 ```mermaid
 quadrantChart
@@ -143,31 +140,31 @@ quadrantChart
     quadrant-4 We must ship now and deal with consequences
 ```
 
-### Practical Categories
+### Practical categories
 
 | Type | Description | Action |
 |------|-------------|--------|
-| **Friction Debt** (High interest, low risk) | Slows every feature | Pay down iteratively during regular work |
-| **Ticking Bomb** (High interest, high risk) | Could cause outages | Prioritize as dedicated work items |
-| **Sleeping Debt** (Low interest, high risk) | Rarely touched but dangerous | Schedule periodic review |
-| **Cosmetic Debt** (Low interest, low risk) | Ugly but harmless | Ignore or fix opportunistically |
+| **Friction Debt** (high interest, low risk) | Slows every feature | Pay down iteratively during regular work |
+| **Ticking Bomb** (high interest, high risk) | Could cause outages | Prioritize as dedicated work items |
+| **Sleeping Debt** (low interest, high risk) | Rarely touched but dangerous | Schedule periodic review |
+| **Cosmetic Debt** (low interest, low risk) | Ugly but harmless | Ignore or fix opportunistically |
 
-### Pay-Down Strategies
+### Pay-down strategies
 
-1. **The 20% Rule**: Allocate 20% of each sprint to debt reduction
-2. **Boy Scout Rule**: Leave every file better than you found it
-3. **Debt Sprints**: Dedicated quarterly sprints focused on debt
-4. **Strangler Fig**: Gradually replace legacy components (no big-bang rewrites)
-5. **Refactor in Context**: Refactor code you're already changing for a feature
-6. **Tech Debt Backlog**: Maintain a visible, prioritized backlog reviewed in sprint planning
+1. Allocate 20% of each sprint to debt reduction.
+2. Boy Scout Rule: leave every file better than you found it.
+3. Run dedicated debt sprints quarterly.
+4. Use the strangler fig pattern to replace legacy components gradually. No big-bang rewrites.
+5. Refactor in context, meaning the code you're already touching for a feature.
+6. Keep a visible, prioritized debt backlog and review it in sprint planning.
 
 > If 40% of sprint capacity goes to maintenance, you're paying a 40% tax on engineering payroll for zero new value. Most companies carry debt costing 20-40% of their technology's value.
 
 ---
 
-## DORA Metrics (Developer Productivity)
+## DORA metrics
 
-### The Five Metrics
+### The five metrics
 
 ```mermaid
 flowchart TD
@@ -184,9 +181,9 @@ flowchart TD
     style stability fill:#1a1a2e,stroke:#e94560,color:#eee
 ```
 
-> The classic DORA model is **four** metrics (deploy frequency, lead time, change failure rate, failed-deployment recovery time). **Reliability** was added in 2021 as the fifth. Treat them as a balanced set — gaming any one in isolation (Goodhart's Law) defeats the purpose.
+> The classic DORA model is four metrics: deploy frequency, lead time, change failure rate, and failed-deployment recovery time. Reliability was added as the fifth in 2021. They're a balanced set, so gaming one in isolation (Goodhart again) defeats the point.
 
-### Performance Benchmarks
+### Performance benchmarks
 
 | Metric | Elite | High | Medium | Low |
 |--------|-------|------|--------|-----|
@@ -195,25 +192,22 @@ flowchart TD
 | Change Failure Rate | <5% | 5-10% | 10-15% | >15% |
 | Time to Restore | <1 hour | <1 day | <1 week | >1 week |
 
-> **Key insight**: Speed and stability are NOT tradeoffs. Elite teams excel at both simultaneously.
+> Speed and stability aren't a tradeoff. Elite teams are good at both at the same time, which is the whole finding.
 
-### What NOT to Measure
+### What not to measure
 
-- Lines of code (rewards bloat)
-- Number of commits (rewards small commits over meaningful ones)
-- Hours worked (rewards presence over productivity)
-- Individual velocity (destroys collaboration)
+Lines of code rewards bloat. Number of commits rewards splitting work rather than doing it. Hours worked rewards presence. Individual velocity destroys collaboration.
 
-> AI coding assistants increase individual output (21% more tasks, 98% more PRs) but organizational delivery metrics stay flat. AI also increases average PR size by 154%. Lesson: AI amplifies individual throughput but doesn't automatically improve team delivery.
+> AI coding assistants raise individual output, 21% more tasks and 98% more PRs, while organizational delivery metrics stay flat. Average PR size also grows 154%. AI amplifies individual throughput without automatically improving team delivery.
 
 ---
 
-## Production Readiness Checklist
+## Production readiness checklist
 
 ### Observability
 - [ ] Structured logging with correlation IDs
 - [ ] Metrics dashboards (latency p50/p95/p99, error rate, throughput)
-- [ ] Alerting with appropriate thresholds and escalation paths
+- [ ] Alerting with sane thresholds and escalation paths
 - [ ] Distributed tracing enabled
 - [ ] Health check endpoints (`/healthz`, `/readyz`)
 
@@ -221,17 +215,17 @@ flowchart TD
 - [ ] Graceful degradation under load
 - [ ] Circuit breakers for external dependencies
 - [ ] Retry logic with exponential backoff and jitter
-- [ ] Timeouts for all external calls
+- [ ] Timeouts on all external calls
 - [ ] Rate limiting on public endpoints
 - [ ] Load testing with expected traffic patterns
 
 ### Security
-- [ ] No hardcoded secrets — credentials in secrets manager
-- [ ] Vulnerability scans on dependencies (critical CVEs resolved)
+- [ ] No hardcoded secrets. Credentials live in a secrets manager
+- [ ] Vulnerability scans on dependencies, critical CVEs resolved
 - [ ] Data encrypted at rest and in transit
-- [ ] Auth/authz verified
+- [ ] Auth and authz verified
 - [ ] Input validation on all user-facing endpoints
-- [ ] CORS, CSP, and security headers configured
+- [ ] CORS, CSP and security headers configured
 
 ### Deployment
 - [ ] Rollback procedure documented and tested
@@ -254,11 +248,11 @@ flowchart TD
 
 ## References
 
-- [Hacker Laws (GitHub)](https://github.com/dwmkerr/hacker-laws) — Comprehensive list of engineering laws
-- Martin Fowler — Technical debt quadrant
-- Google SRE Book — Production readiness, postmortem culture (free online)
-- DORA.dev — DevOps research and metrics
-- Nicole Forsgren et al. — *Accelerate* (the DORA research book)
-- John Ousterhout — *A Philosophy of Software Design*
-- Joel Spolsky — The Law of Leaky Abstractions
-- MIT 6.031 — Debugging methodology
+- [Hacker Laws (GitHub)](https://github.com/dwmkerr/hacker-laws), a comprehensive list of engineering laws
+- Martin Fowler, technical debt quadrant
+- Google SRE Book, production readiness and postmortem culture (free online)
+- DORA.dev, DevOps research and metrics
+- Nicole Forsgren et al., *Accelerate*
+- John Ousterhout, *A Philosophy of Software Design*
+- Joel Spolsky, the Law of Leaky Abstractions
+- MIT 6.031, debugging methodology
