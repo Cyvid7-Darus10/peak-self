@@ -174,7 +174,7 @@ Users affected, revenue impact, duration of degradation.
 [Process failures, not people failures]
 
 ## Action Items
-| Action | Owner | Priority | Due Date |
+| Action | Owner | Priority | Due date |
 |--------|-------|----------|----------|
 
 ## Lessons Learned
@@ -279,7 +279,7 @@ flowchart TD
 
 ### Tier 2: company engineering blogs
 
-| Company | Known For |
+| Company | Known for |
 |---------|-----------|
 | Netflix | Distributed systems, resilience, chaos engineering |
 | Uber | Scale, microservices, real-time systems |

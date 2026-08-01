@@ -6,7 +6,7 @@
 
 ### SOLID
 
-| Principle | Rule | In Practice |
+| Principle | Rule | In practice |
 |-----------|------|-------------|
 | **S**ingle Responsibility | A class has one reason to change | One module, one concern |
 | **O**pen/Closed | Open for extension, closed for modification | Use interfaces and composition |
@@ -16,7 +16,7 @@
 
 ### The essential four
 
-| Principle | What It Means | Common Mistake |
+| Principle | What it means | Common mistake |
 |-----------|---------------|----------------|
 | **DRY** | Every piece of *knowledge* has a single representation | DRY is about knowledge, not code. Similar-looking code may represent different concepts and should not be merged |
 | **KISS** | Favor straightforward over clever | "Debugging is twice as hard as writing code. If you write code as cleverly as possible, you are by definition not smart enough to debug it." (Kernighan) |
@@ -192,7 +192,7 @@ flowchart TD
 | Change Failure Rate | <5% | 5-10% | 10-15% | >15% |
 | Time to Restore | <1 hour | <1 day | <1 week | >1 week |
 
-> Speed and stability aren't a tradeoff. Elite teams are good at both at the same time, which is the whole finding.
+> Speed and stability aren't a tradeoff. Elite teams are good at both at the same time, which is what the research actually found.
 
 ### What not to measure
 

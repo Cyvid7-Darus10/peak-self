@@ -68,7 +68,7 @@ mindmap
       That's how I grow
 ```
 
-> Write your own. Read them daily. Then act like that person.
+> Write your own, read them daily, and act like that person.
 
 ---
 

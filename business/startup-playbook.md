@@ -1,6 +1,6 @@
 # Startup and business playbook
 
-> Ideas are cheap and distribution decides. A worse product with better distribution beats a better product with none. This is my operating manual for turning side projects into a business, written for a developer-founder building B2B in 2026.
+> A worse product with better distribution beats a better product with none. This is my operating manual for turning side projects into a business, written for a developer-founder building B2B in 2026.
 
 ## The build to sell loop
 
@@ -365,7 +365,7 @@ Leverage beats hours. Code and content replicate at zero marginal cost, which is
 
 Ship in public, charge early, iterate. Most product decisions are [two-way doors](../career/growth-system.md#bezos-two-way-doors), so move.
 
-Done and shipped beats perfect and hidden, because distribution and feedback only start after you launch.
+Shipping something done is worth more than perfecting something hidden, because distribution and feedback only start after you launch.
 
 ## References
 

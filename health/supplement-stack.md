@@ -43,15 +43,13 @@ Auto-ships monthly. Prices in SGD.
 | Shipping | | Free | |
 | **Monthly total** | | **$500.43** | About $6,005 a year |
 
-> The four ingestibles are the inside work. The three topicals are the outside work.
-
 ---
 
 ## Independent add-ons
 
 These I buy outside the subscription. The first two have Tier 1 evidence behind them. The last two are lower confidence and carry interaction notes, flagged honestly below.
 
-| Supplement | Typical Dose | Timing | Purpose | Evidence |
+| Supplement | Typical dose | Timing | Purpose | Evidence |
 |------------|-------------|--------|---------|----------|
 | **Creatine monohydrate** | 5 g | Any time, daily | Strength, power, muscle, cognition | Tier 1, the most-studied supplement there is, no loading needed. Note: Longevity Mix also contains creatine, so check the combined total |
 | **Omega-3 fish oil** | 2-4 g combined EPA+DHA | With a meal | Anti-inflammatory, brain, heart | Tier 1. Aim for at least 1 g EPA for the anti-inflammatory effect |

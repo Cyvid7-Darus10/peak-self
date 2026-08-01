@@ -1,6 +1,6 @@
 # Flow state protocol
 
-> Your brain runs in power-saving mode by default. It conserves energy, nudges you toward procrastination, and gets in the way of creative work. The useful part is that you can train yourself into deep focus on demand.
+Your brain defaults to conserving energy, which is where procrastination comes from and why creative work feels like pushing uphill. The useful part is that deep focus is trainable.
 
 ## The protocol
 
@@ -155,7 +155,7 @@ gantt
 
 ## Sound and music for focus
 
-| Sound Type | Best For | Why |
+| Sound type | Best for | Why |
 |---|---|---|
 | **Brown noise** | Analytical/deep work | Masks speech frequencies better than white noise. Many ADHD individuals report significant focus improvement |
 | **40Hz binaural beats** | Concentration | Gamma-range associated with focus (mixed evidence, but consistent auditory environment helps) |
@@ -202,7 +202,7 @@ Pomodoro's fixed 25-minute timer cuts you off mid-flow. Flowtime works around yo
 2. Work until focus fades on its own, then note the elapsed time.
 3. Take a proportional break.
 
-| Work Duration | Break |
+| Work duration | Break |
 |---|---|
 | ~25 min | 5 min |
 | ~50 min | 8 min |

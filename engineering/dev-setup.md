@@ -1,6 +1,6 @@
 # Developer setup and AI workflows
 
-> AI produces volume. The scarce skill is reviewing it well.
+Claude Code, terminal tooling, git and CI, plus how I review what the AI writes.
 
 ## Claude Code setup
 
@@ -184,7 +184,7 @@ And skill atrophy is real. Every line you accept without understanding is a rep 
 6. Make the AI justify itself. Why this approach over X? What are the edge cases? What did you assume? A second session reviewing the first one's output catches a surprising amount.
 7. Prove it with tests rather than vibes. If you can't write a test for it, you don't understand it well enough yet.
 
-> The rule: if it's in your commit, you can explain every line of it. The keystrokes got cheap. The understanding is the job.
+> The rule: if it's in your commit, you can explain every line of it.
 
 ---
 
@@ -416,7 +416,7 @@ Log JSON with defined fields, not plain text.
 | Tracing | OpenTelemetry |
 | APM | Datadog / Elastic |
 
-> Log every async boundary, every external call, and every step entry and exit. When something hangs at 3am, the last log line is the whole investigation.
+> Log every async boundary, every external call, and every step entry and exit. When something hangs at 3am, the last log line is often all you have to go on.
 
 ## References
 

@@ -59,7 +59,7 @@
 ## Books
 
 ### Focus
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *Deep Work* | Cal Newport | Rules for focused success in a distracted world |
 | *The Art of Impossible* | Steven Kotler | Flow state triggers and peak performance science |
@@ -68,7 +68,7 @@
 | *Indistractable* | Nir Eyal | Becoming immune to distraction |
 
 ### Fitness and health
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *Outlive* | Dr. Peter Attia | Longevity-focused training and preventive medicine |
 | *Why We Sleep* | Dr. Matthew Walker | Sleep is the highest-return performance intervention |
@@ -76,7 +76,7 @@
 | *Bigger Leaner Stronger* | Michael Matthews | Evidence-based body composition |
 
 ### Career
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *So Good They Can't Ignore You* | Cal Newport | Skill beats passion for career satisfaction |
 | *The Almanack of Naval Ravikant* | Eric Jorgenson | Wealth through leverage and specific knowledge (free PDF) |
@@ -85,7 +85,7 @@
 | *Poor Charlie's Almanack* | Charlie Munger | Mental models from multiple disciplines |
 
 ### Business and startups
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *The Mom Test* | Rob Fitzpatrick | Talk to customers without lying to yourself |
 | *The Lean Startup* | Eric Ries | Build-measure-learn, MVP, pivot-or-persevere |
@@ -98,7 +98,7 @@
 | *Obviously Awesome* | April Dunford | Positioning that makes products click |
 
 ### Mindset
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *Atomic Habits* | James Clear | Identity-based habits and implementation intentions |
 | *Can't Hurt Me* | David Goggins | The 40% rule. You have more capacity than you think |
@@ -110,7 +110,7 @@
 | *Courage Is Calling* | Ryan Holiday | Practical Stoic courage for modern life |
 
 ### Engineering
-| Book | Author | Key Takeaway |
+| Book | Author | Key takeaway |
 |------|--------|-------------|
 | *Designing Data-Intensive Applications* | Martin Kleppmann | The distributed systems bible |
 | *A Philosophy of Software Design* | John Ousterhout | Managing complexity in software |

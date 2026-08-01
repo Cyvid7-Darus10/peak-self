@@ -1,6 +1,6 @@
 # Senior engineer career roadmap
 
-> The gap between Senior and Staff isn't about writing better code. It's about what happens to everyone else's output when you're on the team.
+The gap between Senior and Staff is measured in what happens to everyone else's output when you're on the team.
 
 ## The career ladder
 
@@ -17,7 +17,7 @@ flowchart LR
     style E fill:#c0392b,stroke:#c0392b,color:#fff
 ```
 
-| Level | Scope | Key Shift | Management Equivalent |
+| Level | Scope | Key shift | Management equivalent |
 |-------|-------|-----------|----------------------|
 | **Senior** | Team / product area | Maximize your own output | Tech Lead |
 | **Staff** | Multi-team / org-wide | Multiply others' output | Engineering Manager |
@@ -104,7 +104,7 @@ flowchart TD
 
 ### Senior engineer total comp (top payers)
 
-| Company | Level | Median Total Comp |
+| Company | Level | Median total comp |
 |---------|-------|-------------------|
 | Databricks | L5 | $600,000 |
 | Roblox | IC4 | $532,000 |
@@ -113,7 +113,7 @@ flowchart TD
 
 ### Staff engineer total comp
 
-| Company | Level | Median Total Comp |
+| Company | Level | Median total comp |
 |---------|-------|-------------------|
 | OpenAI | L5 | $860,000 |
 | Databricks | L6 | $815,000 |
@@ -122,7 +122,7 @@ flowchart TD
 
 ### Principal engineer total comp
 
-| Company | Level | Median Total Comp |
+| Company | Level | Median total comp |
 |---------|-------|-------------------|
 | Meta | E7 | $1,455,000 |
 | Oracle | IC-6 | $1,435,000 |

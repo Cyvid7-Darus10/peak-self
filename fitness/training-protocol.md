@@ -1,6 +1,6 @@
 # Training protocol
 
-> You can't out-think a broken body. Physical capacity is what mental performance runs on.
+Physical capacity is what mental performance runs on, so this is the training side of the system: strength, cardio, recovery, sleep and nutrition.
 
 ## Training philosophy
 
@@ -272,7 +272,7 @@ Aim for 30+ grams of fiber a day from diverse plants, targeting 30 or more diffe
 
 ### Tier 1 (strong evidence)
 
-| Supplement | Dosage | Key Benefit | Notes |
+| Supplement | Dosage | Key benefit | Notes |
 |---|---|---|---|
 | **Creatine monohydrate** | 5g daily | Muscle, brain, strength | Most studied supplement there is. No loading needed |
 | **Vitamin D3** | 2,000-4,000 IU daily | Immune, bone, mood | Take with fat. Target 40-60 ng/mL blood level. Pair with K2 |
@@ -281,7 +281,7 @@ Aim for 30+ grams of fiber a day from diverse plants, targeting 30 or more diffe
 
 ### Tier 2 (good evidence)
 
-| Supplement | Dosage | Key Benefit |
+| Supplement | Dosage | Key benefit |
 |---|---|---|
 | **Ashwagandha (KSM-66)** | 600mg daily | Cortisol reduction, recovery |
 | **Zinc** | 15-30mg daily | Testosterone support, immune |

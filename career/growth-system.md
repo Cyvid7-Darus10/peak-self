@@ -1,6 +1,6 @@
 # Career growth system
 
-> Nobody hands you the next rung. What actually carries between jobs is the skills you built and the people who know your work.
+What carries between jobs is the skills you built and the people who know your work. This is how I try to build both on purpose instead of by accident.
 
 ## The growth framework
 
@@ -17,8 +17,6 @@ flowchart LR
     style Opportunities fill:#e67e22,stroke:#e67e22,color:#fff
     style Feedback fill:#8e44ad,stroke:#8e44ad,color:#fff
 ```
-
-> The flywheel: better skills → better output → more visibility → more opportunities → harder problems → better skills
 
 ---
 
@@ -221,7 +219,7 @@ flowchart TD
 
 ### Other frameworks
 
-| Framework | When to Use | How |
+| Framework | When to use | How |
 |---|---|---|
 | **Regret Minimization** (Bezos) | Major life decisions | Project to age 80: "Will I regret not trying this?" |
 | **10/10/10 Rule** (Suzy Welch) | Emotional decisions | How will I feel in 10 minutes? 10 months? 10 years? |
@@ -249,7 +247,7 @@ Break the problem down to fundamental truths and reason up from there. At SpaceX
 
 > "Compound interest applies to relationships, learning, and reputation, not just money."
 
-Seek wealth, meaning assets that earn while you sleep, rather than money or status. Status is zero-sum. Wealth creation isn't. Specific knowledge plus leverage plus accountability is the whole equation.
+Seek wealth, meaning assets that earn while you sleep, rather than money or status. Status is zero-sum. Wealth creation isn't. Specific knowledge plus leverage plus accountability is the equation.
 
 ---
 
@@ -274,7 +272,7 @@ mindmap
       Fair for the market?
 ```
 
-| Career Stage | Maximize |
+| Career stage | Maximize |
 |---|---|
 | Early career | Learning velocity |
 | Mid career | Leverage + autonomy |

@@ -1,6 +1,6 @@
 # Interests and things I'm building
 
-> Reading sharpens what goes in, building ships what comes out, and doing it in public compounds. The hobbies aren't time off from the system, they feed it.
+Reading, side projects, and building in public. They feed the rest of the system rather than sitting outside it.
 
 ## The map
 
@@ -53,7 +53,7 @@ The principle: scratch a real itch for a real person before generalizing.
 
 The platform and brand for starting my influencer journey, which means [building in public](../career/growth-system.md#building-in-public) and running the content engine across long and short form.
 
-Strategy comes straight from the growth system: niche down, lead with value, and post three to five times a week on one platform. Consistency beats one viral hit, and documenting the failures alongside the wins is the part that builds trust.
+Strategy comes straight from the growth system: niche down, lead with value, and post three to five times a week on one platform. Consistency matters more than one viral hit, and documenting the failures alongside the wins is the part that builds trust.
 
 Status: _(track here: what miming.io is, current build stage, first content goal)_
 
@@ -73,7 +73,7 @@ flowchart LR
     style D fill:#0a8754,stroke:#0a8754,color:#fff
 ```
 
-> Input, build, share, grow, repeat. Same flywheel as the [career growth system](../career/growth-system.md), pointed at things I actually enjoy.
+> Same flywheel as the [career growth system](../career/growth-system.md), pointed at things I actually enjoy.
 
 ## Project tracker
 
